@@ -1,0 +1,9 @@
+﻿  Performing Custom Build Tools
+  logging.c
+  main.c
+  screen.c
+  string.c
+C:\Users\Lori\Desktop\PSM\MiniOS\kernel\string.c(805,33): warning C4090: 'function': different 'const' qualifiers
+  Generating Code...
+  kernel.vcxproj -> C:\Users\Lori\Desktop\PSM\MiniOS\kernel\Release\kernel.exe
+          1 file(s) copied.

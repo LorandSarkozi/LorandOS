@@ -1,0 +1,2 @@
+^C:\USERS\LORI\DESKTOP\PSM\MINIOS\KERNEL\__INIT.ASM
+".\..\utils\nasm" -o "kernel\x64\Release\__init.obj" -f win64 "C:\Users\Lori\Desktop\PSM\MiniOS\kernel\__init.asm"

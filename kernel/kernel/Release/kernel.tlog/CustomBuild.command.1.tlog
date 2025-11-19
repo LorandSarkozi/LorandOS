@@ -1,0 +1,2 @@
+^C:\USERS\LORI\DESKTOP\PSM\MINIOS\KERNEL\__INIT.ASM
+".\..\utils\nasm" -o "kernel\Release\__init.obj" -f win32 "C:\Users\Lori\Desktop\PSM\MiniOS\kernel\__init.asm"
