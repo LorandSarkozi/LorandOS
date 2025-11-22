@@ -5,7 +5,7 @@ A minimal operating system kernel written in C/Assembly for x86/x64 architecture
 ## Project Structure
 
 ```
-MiniOS/
+LorandOS/
 ├── kernel/                      # Main kernel directory
 │   ├── __init.asm              # Assembly entry point and initialization
 │   ├── main.c/h                # Kernel entry point and initialization
