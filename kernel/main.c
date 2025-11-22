@@ -12,7 +12,7 @@ void KernelMain()
 {
     __magic();    // break into BOCHS
     
-    __enableSSE();  // only for demo; in the future will be called from __init.asm
+    //__enableSSE();  // only for demo; in the future will be called from __init.asm
 
     ClearScreen();
 
@@ -20,7 +20,7 @@ void KernelMain()
 
     Log("Logging initialized!");
 
-    HelloBoot();
+    //HelloBoot();
 
  
     Log("Initializing PIC");
@@ -34,23 +34,15 @@ void KernelMain()
     Log("Initializing keyboard");
     Keyboard_Init();
     
-    // Enable interrupts
     Log("Enabling interrupts");
     __sti();
     
     Log("System ready! Type on keyboard...");
 
-    // Main idle loop
     while (1)
     {
         __halt();  // Wait for next interrupt
     }
-
-    // TODO!!! Implement a simple console
-
-    // TODO!!! read disk sectors using PIO mode ATA
-
-    // TODO!!! Memory management: virtual, physical and heap memory allocators
 
 //    Log("IDT loaded... Test triggering:");
 //
@@ -61,4 +53,10 @@ void KernelMain()
 //    Log("Triggering #UD (no error code)..."); // will return 0x0006 for UD
 //    TriggerUD2();    
 //#endif
+
+     // TODO!!! Implement a simple console
+
+    // TODO!!! read disk sectors using PIO mode ATA
+
+    // TODO!!! Memory management: virtual, physical and heap memory allocators
 }

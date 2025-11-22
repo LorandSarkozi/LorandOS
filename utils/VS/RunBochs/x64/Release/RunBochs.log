@@ -2,7 +2,7 @@
        Property reassignment: $(MSBuildExtensionsPath32)="D:\New folder\MSBuild" (previous value: "C:\Program Files (x86)\MSBuild") at 
        Search paths being used for $(MSBuildExtensionsPath) are D:\New folder\MSBuild;$(MSBuildProgramFiles32)\MSBuild
        Trying to import D:\New folder\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.props using extensions path D:\New folder\MSBuild
-       Property reassignment: $(MSBuildProjectExtensionsPath)="C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\obj\" (previous value: "obj\") at D:\New folder\MSBuild\Current\Microsoft.Common.props (60,5)
+       Property reassignment: $(MSBuildProjectExtensionsPath)="C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\obj\" (previous value: "obj\") at D:\New folder\MSBuild\Current\Microsoft.Common.props (60,5)
        Property 'MSBuildUserExtensionsPath' with value 'C:\Users\Lori\AppData\Local\Microsoft\MSBuild' expanded from the environment.
        Search paths being used for $(MSBuildExtensionsPath) are D:\New folder\MSBuild;$(MSBuildProgramFiles32)\MSBuild
        Trying to import D:\New folder\MSBuild\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\* using extensions path D:\New folder\MSBuild
@@ -14,8 +14,8 @@
        The "LangID" property is a global property, and cannot be modified.
        The "SolutionDir" property is a global property, and cannot be modified.
        Property 'LOCALAPPDATA' with value 'C:\Users\Lori\AppData\Local' expanded from the environment.
-       Property reassignment: $(WholeProgramOptimization)="true" (previous value: "false") at C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj (21,5)
-       Property reassignment: $(CharacterSet)="Unicode" (previous value: "NotSet") at C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj (22,5)
+       Property reassignment: $(WholeProgramOptimization)="true" (previous value: "false") at C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj (21,5)
+       Property reassignment: $(CharacterSet)="Unicode" (previous value: "NotSet") at C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj (22,5)
        Property 'PROCESSOR_ARCHITECTURE' with value 'AMD64' expanded from the environment.
        Property reassignment: $(WindowsSdkDir_10)="C:\Program Files (x86)\Windows Kits\10\" (previous value: "") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (18,5)
        Property reassignment: $(NETFXSDK_Version)="4.8" (previous value: "4.8.1") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.props (46,5)
@@ -50,7 +50,7 @@
        Property 'Path' with value 'C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\PROGRA~2\Aldec\ACTIVE~1.3\BIN;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Lori\AppData\Local\Programs\Python\Python312;C:\Users\Lori\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\apache-maven-4.0.0-beta-5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Ruby31-x64\bin;C:\Users\Lori\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lori\AppData\Local\Microsoft\WindowsApps;C:\ghcup\bin;C:\Users\Lori\AppData\Roaming\npm;C:\Users\Lori\AppData\Local\Programs\Windsurf\bin' expanded from the environment.
        Property 'SystemRoot' with value 'C:\WINDOWS' expanded from the environment.
        The "SolutionExt" property is a global property, and cannot be modified.
-       Property reassignment: $(ExtensionsToDeleteOnClean)="*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\RunBochs.exe.manifest;C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\RunBochs.tlb;C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\RunBochs.pdb;C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\RunBochs.exe;C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\RunBochs.bsc;C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\RunBochs.ilk;C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\RunBochs.exe.intermediate.manifest;x64\Release\RunBochs.vcxproj.FileListAbsolute.txt" (previous value: "*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (40,5)
+       Property reassignment: $(ExtensionsToDeleteOnClean)="*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.exe.manifest;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.tlb;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.pdb;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.exe;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.bsc;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.ilk;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.exe.intermediate.manifest;x64\Release\RunBochs.vcxproj.FileListAbsolute.txt" (previous value: "*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (40,5)
        Property reassignment: $(DebugType)="none" (previous value: "") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (32,5)
        Search paths being used for $(MSBuildExtensionsPath) are D:\New folder\MSBuild;$(MSBuildProgramFiles32)\MSBuild
        Search paths being used for $(MSBuildExtensionsPath) are D:\New folder\MSBuild;$(MSBuildProgramFiles32)\MSBuild
@@ -75,7 +75,7 @@
        Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:D:\New folder\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders}" (previous value: "{CandidateAssemblyFiles};D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:D:\New folder\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx}") at D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (654,5)
        Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:D:\New folder\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC}" (previous value: "{CandidateAssemblyFiles};D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:D:\New folder\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders}") at D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (655,5)
        Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:D:\New folder\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}" (previous value: "{CandidateAssemblyFiles};D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:D:\New folder\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC}") at D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (656,5)
-       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:D:\New folder\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\" (previous value: "{CandidateAssemblyFiles};D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:D:\New folder\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}") at D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (657,5)
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:D:\New folder\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\" (previous value: "{CandidateAssemblyFiles};D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;{HintPathFromItem};{TargetFrameworkDirectory};{AssemblyFoldersFromConfig:D:\New folder\MSBuild\Current\Bin\AssemblyFolders.config,};;{Registry:Software\Microsoft\,,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}") at D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (657,5)
        Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (3896,5)
        Property reassignment: $(_TargetsThatPrepareProjectReferences)="
              AssignProjectConfiguration;
@@ -129,7 +129,7 @@
            ") at D:\New folder\MSBuild\Microsoft\VisualStudio\v17.0\TeamTest\Microsoft.TeamTest.targets (4,5)
        Search paths being used for $(MSBuildExtensionsPath) are D:\New folder\MSBuild;$(MSBuildProgramFiles32)\MSBuild
        Trying to import D:\New folder\MSBuild\$(MSBuildToolsVersion)\Microsoft.Common.targets\ImportAfter\* using extensions path D:\New folder\MSBuild
-       Property reassignment: $(ProjectLockFile)="obj\project.assets.json" (previous value: "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\obj\project.assets.json") at D:\New folder\MSBuild\Microsoft\NuGet\17.0\Microsoft.NuGet.targets (74,5)
+       Property reassignment: $(ProjectLockFile)="obj\project.assets.json" (previous value: "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\obj\project.assets.json") at D:\New folder\MSBuild\Microsoft\NuGet\17.0\Microsoft.NuGet.targets (74,5)
        Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
              ResolveProjectReferences;
              FindInvalidProjectReferences;
@@ -169,8 +169,8 @@
        Search paths being used for $(MSBuildExtensionsPath) are D:\New folder\MSBuild;$(MSBuildProgramFiles32)\MSBuild
        Search paths being used for $(MSBuildExtensionsPath) are D:\New folder\MSBuild;$(MSBuildProgramFiles32)\MSBuild
        Trying to import D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets using extensions path D:\New folder\MSBuild
-       Property reassignment: $(JsonSchemaCombinedFilePath)="C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\x64\Release\CombinedComponentSchema.json" (previous value: "x64\Release\\CombinedComponentSchema.json") at D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (25,5)
-       Property reassignment: $(AppSettingsJsonSchemaCombinedFilePath)="C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\x64\Release\AppSettingsSchema.json" (previous value: "x64\Release\\AppSettingsSchema.json") at D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (27,5)
+       Property reassignment: $(JsonSchemaCombinedFilePath)="C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\x64\Release\CombinedComponentSchema.json" (previous value: "x64\Release\\CombinedComponentSchema.json") at D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (25,5)
+       Property reassignment: $(AppSettingsJsonSchemaCombinedFilePath)="C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\x64\Release\AppSettingsSchema.json" (previous value: "x64\Release\\AppSettingsSchema.json") at D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (27,5)
        Property reassignment: $(DebugType)="" (previous value: "none") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets (39,5)
        Property reassignment: $(BuildDependsOn)="
              _PrepareForBuild;
@@ -785,10 +785,10 @@
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
-Build started 18/11/2025 21:07:49.
-Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" on node 2 (Rebuild target(s)).
+Build started 22/11/2025 20:57:12.
+Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" on node 2 (Rebuild target(s)).
      1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
-     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
+     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
        Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
        Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
        Task "Message"
@@ -797,51 +797,51 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Task "Message"
          Platform=x64
        Done executing task "Message".
-       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\' != '' and !HasTrailingSlash('C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\')).
+       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\' != '' and !HasTrailingSlash('C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\')).
        Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('x64\Release\' != '' and !HasTrailingSlash('x64\Release\')).
        Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
        Task "MSBuildInternalMessage" skipped, due to false condition; ( '$(Prefer32Bit)' == 'true' and '$(PreferNativeArm64)' == 'true' ) was evaluated as ( '' == 'true' and '' == 'true' ).
        Task "MSBuildInternalMessage" skipped, due to false condition; ( '$(NoWin32Manifest)' == 'true' and '$(PreferNativeArm64)' == 'true' ) was evaluated as ( '' == 'true' and '' == 'true' ).
        Task "MSBuildInternalMessage" skipped, due to false condition; ( '$(PreferNativeArm64)' == 'true' and '$(Platform)' != 'AnyCPU' ) was evaluated as ( '' == 'true' and 'x64' != 'AnyCPU' ).
-       Task "Error" skipped, due to false condition; ( '$(_InitialMSBuildProjectExtensionsPath)' != '' And '$(MSBuildProjectExtensionsPath)' != '$(_InitialMSBuildProjectExtensionsPath)' ) was evaluated as ( 'C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\obj\' != '' And 'C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\obj\' != 'C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\obj\' ).
-       Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\obj\' ).
+       Task "Error" skipped, due to false condition; ( '$(_InitialMSBuildProjectExtensionsPath)' != '' And '$(MSBuildProjectExtensionsPath)' != '$(_InitialMSBuildProjectExtensionsPath)' ) was evaluated as ( 'C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\obj\' != '' And 'C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\obj\' != 'C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\obj\' ).
+       Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\obj\' ).
      1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "RunBochs.vcxproj".
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "SetTelemetryEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
+     1>Target "SetTelemetryEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
        Using "SetEnv" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={79C66080-FBAC-42D5-929E-04CA67F81638}
+         VSTEL_SolutionSessionID={CA2E19C4-C27A-4ED2-B413-D6BB9BB0650E}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=2629139685
+         VSTEL_CurrentSolutionBuildID=3467594187
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={d7ab6db1-8bb8-4481-8947-49a5c1a1defb}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_SolutionPath=C:\Users\Lori\Desktop\PSM\MiniOS\kernel\kernel.sln
+         VSTEL_SolutionPath=C:\Users\Lori\Desktop\MiniOS\kernel\kernel.sln
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_MSBuildProjectFullPath=C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj
+         VSTEL_MSBuildProjectFullPath=C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj
        Done executing task "SetEnv".
      1>Done building target "SetTelemetryEnvironmentVariables" in project "RunBochs.vcxproj".
-     1>Target "_PrepareForRebuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
+     1>Target "_PrepareForRebuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
      1>Done building target "_PrepareForRebuild" in project "RunBochs.vcxproj".
-     1>Target "BeforeRebuild" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
+     1>Target "BeforeRebuild" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
      1>Done building target "BeforeRebuild" in project "RunBochs.vcxproj".
-     1>Target "_PrepareForClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
+     1>Target "_PrepareForClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
        Task "Delete"
          Deleting file "x64\Release\RunBochs.tlog\RunBochs.lastbuildstate".
        Done executing task "Delete".
      1>Done building target "_PrepareForClean" in project "RunBochs.vcxproj".
-     1>Target "BeforeClean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
+     1>Target "BeforeClean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
      1>Done building target "BeforeClean" in project "RunBochs.vcxproj".
        Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
                            ('$(_AssemblyTimestampBeforeCompile)' == '')) and
                           Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'exe' != 'library') or
                            ('' == '')) and
                           Exists('obj\RunBochs.vcxproj.UnmanagedRegistration.cache')).
-     1>Target "CoreClean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
+     1>Target "CoreClean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
        Task "Delete"
          File "x64\Release\\TempCA\RunBochs.pdb" doesn't exist. Skipping.
          File "x64\Release\\TempCA\RunBochs.exe" doesn't exist. Skipping.
@@ -849,7 +849,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Task "ReadLinesFromFile"
        Done executing task "ReadLinesFromFile".
        Task "FindUnderPath"
-         Comparison path is "C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\".
+         Comparison path is "C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\".
        Done executing task "FindUnderPath".
        Task "FindUnderPath"
          Comparison path is "x64\Release\".
@@ -864,18 +864,18 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
          Skipping write to file "x64\Release\RunBochs.vcxproj.FileListAbsolute.txt" because content would not change.
        Done executing task "WriteLinesToFile".
      1>Done building target "CoreClean" in project "RunBochs.vcxproj".
-     1>Target "IgnoreJavaScriptOutputAssembly" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "AssignProjectConfiguration" depends on it):
+     1>Target "IgnoreJavaScriptOutputAssembly" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "AssignProjectConfiguration" depends on it):
      1>Done building target "IgnoreJavaScriptOutputAssembly" in project "RunBochs.vcxproj".
-     1>Target "AssignProjectConfiguration" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareProjectReferences" depends on it):
+     1>Target "AssignProjectConfiguration" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareProjectReferences" depends on it):
        Task "AssignProjectConfiguration"
        Done executing task "AssignProjectConfiguration".
      1>Done building target "AssignProjectConfiguration" in project "RunBochs.vcxproj".
-     1>Target "_SplitProjectReferencesByFileExistence" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareProjectReferences" depends on it):
+     1>Target "_SplitProjectReferencesByFileExistence" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareProjectReferences" depends on it):
        Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
      1>Done building target "_SplitProjectReferencesByFileExistence" in project "RunBochs.vcxproj".
-     1>Target "_AddOutputPathToGlobalPropertiesToRemove" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_GetProjectReferenceTargetFrameworkProperties" depends on it):
+     1>Target "_AddOutputPathToGlobalPropertiesToRemove" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_GetProjectReferenceTargetFrameworkProperties" depends on it):
      1>Done building target "_AddOutputPathToGlobalPropertiesToRemove" in project "RunBochs.vcxproj".
-     1>Target "_GetProjectReferenceTargetFrameworkProperties" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareProjectReferences" depends on it):
+     1>Target "_GetProjectReferenceTargetFrameworkProperties" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareProjectReferences" depends on it):
        Task "MSBuild"
        Done executing task "MSBuild".
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.SkipGetTargetFrameworkProperties)' != 'true' and '$(EnableDynamicPlatformResolution)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
@@ -891,19 +891,19 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Target "_GetProjectReferencePlatformProperties" skipped, due to false condition; ('$(EnableDynamicPlatformResolution)' == 'true'
                             and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true'
                             and '' != '').
-     1>Target "PrepareProjectReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CleanReferencedProjects" depends on it):
+     1>Target "PrepareProjectReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CleanReferencedProjects" depends on it):
      1>Done building target "PrepareProjectReferences" in project "RunBochs.vcxproj".
-     1>Target "CleanReferencedProjects" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
+     1>Target "CleanReferencedProjects" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
        Task "MSBuild" skipped, due to false condition; ('$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' != 'true' and 'true' == 'true' and '' != '').
      1>Done building target "CleanReferencedProjects" in project "RunBochs.vcxproj".
-     1>Target "CleanPublishFolder" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
-       Task "RemoveDir" skipped, due to false condition; ('$(ClickOncePublishDir)'=='$(OutputPath)app.publish\' and Exists('$(ClickOncePublishDir)')) was evaluated as ('C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\app.publish\'=='C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\app.publish\' and Exists('C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\app.publish\')).
+     1>Target "CleanPublishFolder" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
+       Task "RemoveDir" skipped, due to false condition; ('$(ClickOncePublishDir)'=='$(OutputPath)app.publish\' and Exists('$(ClickOncePublishDir)')) was evaluated as ('C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\app.publish\'=='C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\app.publish\' and Exists('C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\app.publish\')).
      1>Done building target "CleanPublishFolder" in project "RunBochs.vcxproj".
-     1>Target "AfterClean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
+     1>Target "AfterClean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
      1>Done building target "AfterClean" in project "RunBochs.vcxproj".
-     1>Target "BeforeCppClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CppClean" depends on it):
+     1>Target "BeforeCppClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CppClean" depends on it):
      1>Done building target "BeforeCppClean" in project "RunBochs.vcxproj".
-     1>Target "CoreCppClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CppClean" depends on it):
+     1>Target "CoreCppClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CppClean" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
        Using "CppClean" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
@@ -912,31 +912,31 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Task "WriteLinesToFile"
        Done executing task "WriteLinesToFile".
      1>Done building target "CoreCppClean" in project "RunBochs.vcxproj".
-     1>Target "AfterCppClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CppClean" depends on it):
+     1>Target "AfterCppClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CppClean" depends on it):
      1>Done building target "AfterCppClean" in project "RunBochs.vcxproj".
-     1>Target "PGInstrumentedClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CppClean" depends on it):
+     1>Target "PGInstrumentedClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CppClean" depends on it):
        Task "Delete"
        Done executing task "Delete".
      1>Done building target "PGInstrumentedClean" in project "RunBochs.vcxproj".
-     1>Target "CppClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
+     1>Target "CppClean" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Clean" depends on it):
      1>Done building target "CppClean" in project "RunBochs.vcxproj".
-     1>Target "Clean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
+     1>Target "Clean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
      1>Done building target "Clean" in project "RunBochs.vcxproj".
        Target "SetTelemetryEnvironmentVariables" skipped. Previously built successfully.
-     1>Target "_PrepareForBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Target "_PrepareForBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
        Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
      1>Done building target "_PrepareForBuild" in project "RunBochs.vcxproj".
-     1>Target "_PrepareForReferenceResolution" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "_PrepareForReferenceResolution" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveReferences" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(WarnAboutIndividualManagedFiles)' == 'true') was evaluated as ('' == 'true').
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "_PrepareForReferenceResolution" in project "RunBochs.vcxproj".
        Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as (''!='' and 'false'=='true' and '' != 'false').
-     1>Target "BeforeResolveReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "BeforeResolveReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "BeforeResolveReferences" in project "RunBochs.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
        Target "PrepareProjectReferences" skipped. Previously built successfully.
        Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
-     1>Target "ResolveProjectReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "ResolveProjectReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveReferences" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '17.0' != '10.0' and '' != '').
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
@@ -947,16 +947,16 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
        Target "ResolveProjectReferences" skipped. Previously built successfully.
        Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
-     1>Target "GetFrameworkPaths" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "GetFrameworkPaths" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveAssemblyReferences" depends on it):
      1>Done building target "GetFrameworkPaths" in project "RunBochs.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
        Target "GetFrameworkPaths" skipped. Previously built successfully.
-     1>Target "GetReferenceAssemblyPaths" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "GetReferenceAssemblyPaths" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('' == '' or '' == '')).
      1>Done building target "GetReferenceAssemblyPaths" in project "RunBochs.vcxproj".
-     1>Target "AddExternalIncludDirectoriesToPaths" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "SetBuildDefaultEnvironmentVariables" depends on it):
+     1>Target "AddExternalIncludDirectoriesToPaths" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "SetBuildDefaultEnvironmentVariables" depends on it):
      1>Done building target "AddExternalIncludDirectoriesToPaths" in project "RunBochs.vcxproj".
-     1>Target "SetBuildDefaultEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "SetBuildDefaultEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForBuild" depends on it):
        Task "SetEnv"
          PATH=D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;D:\New folder\Common7\tools;D:\New folder\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;D:\New folder\MSBuild\Current\Bin\amd64;C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;D:\New folder\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\PROGRA~2\Aldec\ACTIVE~1.3\BIN;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Lori\AppData\Local\Programs\Python\Python312;C:\Users\Lori\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\apache-maven-4.0.0-beta-5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Ruby31-x64\bin;C:\Users\Lori\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lori\AppData\Local\Microsoft\WindowsApps;C:\ghcup\bin;C:\Users\Lori\AppData\Roaming\npm;C:\Users\Lori\AppData\Local\Programs\Windsurf\bin;
        Done executing task "SetEnv".
@@ -975,22 +975,22 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
      1>Done building target "SetBuildDefaultEnvironmentVariables" in project "RunBochs.vcxproj".
        Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-     1>Target "GetResolvedWinMD" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "GetResolvedWinMD" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForBuild" depends on it):
      1>Done building target "GetResolvedWinMD" in project "RunBochs.vcxproj".
-     1>Target "_CheckWindowsSDKInstalled" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "_CheckWindowsSDKInstalled" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WindowsSDK.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForBuild" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(WindowsSDKInstalled)' != 'true') was evaluated as ('true' != 'true').
        Task "VCMessage" skipped, due to false condition; ('$(WindowsAppContainer)' != 'true' and '$(WindowsSDK_Desktop_Support)' != true) was evaluated as ('false' != 'true' and 'true' != true).
      1>Done building target "_CheckWindowsSDKInstalled" in project "RunBochs.vcxproj".
        Target "GetFrameworkPaths" skipped. Previously built successfully.
        Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
        Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
-     1>Target "SetCABuildNativeEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "SetCABuildNativeEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VisualStudio\v17.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForBuild" depends on it):
        Task "SetEnv"
          CAExcludePath=D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\include;D:\New folder\VC\Tools\MSVC\14.41.34120\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt;Include\um;
        Done executing task "SetEnv".
        Task "SetEnv" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(VCCodeAnalysisUX)'=='true') was evaluated as ('false'=='true' and 'true'=='true').
      1>Done building target "SetCABuildNativeEnvironmentVariables" in project "RunBochs.vcxproj".
-     1>Target "PrepareForBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "PrepareForBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
        Task "VCMessage" skipped, due to false condition; ('$(ApplicationType)' == '' and '$(DesignTimeBuild)' != 'true' and '$(_ToolsetFound)' != 'true') was evaluated as ('' == '' and '' != 'true' and 'true' != 'true').
        Task "VCMessage" skipped, due to false condition; ('$(ApplicationType)' != '' and '$(DesignTimeBuild)' != 'true' and '$(_ToolsetFound)' != 'true') was evaluated as ('' != '' and '' != 'true' and 'true' != 'true').
@@ -1036,28 +1036,28 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
        Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as (''!='' and 'false'=='true' and '' != 'false').
        Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
-     1>Target "ResolveSDKReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "ResolveSDKReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
      1>Done building target "ResolveSDKReferences" in project "RunBochs.vcxproj".
        Target "ResolveSDKReferences" skipped. Previously built successfully.
-     1>Target "ExpandSDKReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "ExpandSDKReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
      1>Done building target "ExpandSDKReferences" in project "RunBochs.vcxproj".
        Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('obj\project.assets.json')).
-     1>Target "ResolveAssemblyReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "ResolveAssemblyReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveReferences" depends on it):
        Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
      1>Done building target "ResolveAssemblyReferences" in project "RunBochs.vcxproj".
        Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and '@(SuggestedBindingRedirects)' != '' and '$(DesignTimeBuild)' != 'true' and '$(BuildingProject)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true' and '' != '' and '' != 'true' and 'true' == 'true').
        Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true').
        Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
-     1>Target "AfterResolveReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "AfterResolveReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "AfterResolveReferences" in project "RunBochs.vcxproj".
        Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
-     1>Target "ResolveReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Target "ResolveReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
      1>Done building target "ResolveReferences" in project "RunBochs.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "PrepareForBuild" skipped. Previously built successfully.
-     1>Target "InitializeBuildStatus" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Target "InitializeBuildStatus" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
        Task "ReadLinesFromFile"
        Done executing task "ReadLinesFromFile".
        Task "WriteLinesToFile"
@@ -1068,14 +1068,14 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "RunBochs.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
-     1>Target "BuildGenerateSourcesTraverse" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildGenerateSources" depends on it):
+     1>Target "BuildGenerateSourcesTraverse" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildGenerateSources" depends on it):
        Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
      1>Done building target "BuildGenerateSourcesTraverse" in project "RunBochs.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "BeforeBuildGenerateSources" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "BeforeBuildGenerateSources" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "BeforeBuildGenerateSources" in project "RunBochs.vcxproj".
-     1>Target "PreBuildEvent" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "PreBuildEvent" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
        Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
        Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
      1>Done building target "PreBuildEvent" in project "RunBochs.vcxproj".
@@ -1083,16 +1083,16 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Target "InitializeBuildStatus" skipped. Previously built successfully.
        Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
        Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
-     1>Target "_SelectedFiles" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "SelectCustomBuild" depends on it):
+     1>Target "_SelectedFiles" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "SelectCustomBuild" depends on it):
      1>Done building target "_SelectedFiles" in project "RunBochs.vcxproj".
-     1>Target "SelectCustomBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CustomBuild" depends on it):
+     1>Target "SelectCustomBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CustomBuild" depends on it):
      1>Done building target "SelectCustomBuild" in project "RunBochs.vcxproj".
-     1>Target "ComputeCustomBuildOutput" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CustomBuild" depends on it):
+     1>Target "ComputeCustomBuildOutput" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CustomBuild" depends on it):
        Task "CreateItem" skipped, due to false condition; ('%(CustomBuildOutputs.OutputItemType)'!='') was evaluated as (''!='').
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "ComputeCustomBuildOutput" in project "RunBochs.vcxproj".
-     1>Target "CustomBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "CustomBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
        Using "GetOutOfDateItems" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "GetOutOfDateItems"
        Done executing task "GetOutOfDateItems".
@@ -1105,65 +1105,65 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
        Target "_CreateCopyFileItems" skipped, due to false condition; ('@(CopyFileToFolders)' != '') was evaluated as ('' != '').
        Target "_SelectedFiles" skipped. Previously built successfully.
-     1>Target "CopyFileToFolders" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "CopyFileToFolders" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
        Task "GetOutOfDateItems"
        Done executing task "GetOutOfDateItems".
        Task "Copy" skipped, due to false condition; ('@(_OutOfDateCopyFile)' != '') was evaluated as ('' != '').
      1>Done building target "CopyFileToFolders" in project "RunBochs.vcxproj".
        Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
-     1>Target "_Xsd" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "_Xsd" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "_Xsd" in project "RunBochs.vcxproj".
-     1>Target "MakeDirsForMidl" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Midl" depends on it):
+     1>Target "MakeDirsForMidl" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Midl" depends on it):
        Task "Makedir"
        Done executing task "Makedir".
      1>Done building target "MakeDirsForMidl" in project "RunBochs.vcxproj".
        Target "Midl" skipped, due to false condition; ('@(Midl)' != '') was evaluated as ('' != '').
        Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
        Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
-     1>Target "ComputeMIDLGeneratedCompileInputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Midl" depends on it):
+     1>Target "ComputeMIDLGeneratedCompileInputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Midl" depends on it):
      1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "RunBochs.vcxproj".
-     1>Target "AfterMidl" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Midl" depends on it):
+     1>Target "AfterMidl" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Midl" depends on it):
      1>Done building target "AfterMidl" in project "RunBochs.vcxproj".
-     1>Target "_Midl" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "_Midl" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "_Midl" in project "RunBochs.vcxproj".
-     1>Target "AfterBuildGenerateSources" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "AfterBuildGenerateSources" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "AfterBuildGenerateSources" in project "RunBochs.vcxproj".
-     1>Target "AfterBuildGenerateSourcesEvent" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "AfterBuildGenerateSourcesEvent" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "AfterBuildGenerateSourcesEvent" in project "RunBochs.vcxproj".
-     1>Target "_BuildGenerateSourcesAction" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildGenerateSources" depends on it):
+     1>Target "_BuildGenerateSourcesAction" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildGenerateSources" depends on it):
      1>Done building target "_BuildGenerateSourcesAction" in project "RunBochs.vcxproj".
-     1>Target "BuildGenerateSources" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Target "BuildGenerateSources" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
      1>Done building target "BuildGenerateSources" in project "RunBochs.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
-     1>Target "BuildCompileTraverse" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildCompile" depends on it):
+     1>Target "BuildCompileTraverse" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildCompile" depends on it):
        Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
      1>Done building target "BuildCompileTraverse" in project "RunBochs.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "BeforeClCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "BeforeClCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "BeforeClCompile" in project "RunBochs.vcxproj".
        Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
        Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
-     1>Target "ComputeCLInputPDBName" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "ComputeCLInputPDBName" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "ComputeCLInputPDBName" in project "RunBochs.vcxproj".
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "FindReferenceAssembliesForReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ComputeReferenceCLInput" depends on it):
+     1>Target "FindReferenceAssembliesForReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ComputeReferenceCLInput" depends on it):
      1>Done building target "FindReferenceAssembliesForReferences" in project "RunBochs.vcxproj".
-     1>Target "GetReferencedVCProjectsInfo" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ComputeReferenceCLInput" depends on it):
+     1>Target "GetReferencedVCProjectsInfo" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ComputeReferenceCLInput" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '').
      1>Done building target "GetReferencedVCProjectsInfo" in project "RunBochs.vcxproj".
-     1>Target "ComputeReferenceCLInput" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "ComputeReferenceCLInput" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
        Task "WriteLinesToFile" skipped, due to false condition; ('@(_ReferenceOutputsToCopyLocally)'!='' and '$(DesignTimeBuild)' != 'true' and '$(TrackFileAccess)' == 'true') was evaluated as (''!='' and '' != 'true' and 'true' == 'true').
        Task "WriteLinesToFile" skipped, due to false condition; ('@(_ReferenceOutputsToCopyLocally)'!='' and '$(DesignTimeBuild)' != 'true' and '$(TrackFileAccess)' == 'true') was evaluated as (''!='' and '' != 'true' and 'true' == 'true').
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "ComputeReferenceCLInput" in project "RunBochs.vcxproj".
-     1>Target "WarnCompileDuplicatedFilename" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "WarnCompileDuplicatedFilename" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and '' != '' and '' == '').
      1>Done building target "WarnCompileDuplicatedFilename" in project "RunBochs.vcxproj".
        Target "ComputeStdModulesCompileInputs" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableCppModules)' != 'false' and '$(EnableStdModules)' != 'false') was evaluated as ('' != '' and '' != 'false' and '' != 'false').
        Target "FixupCLCompileOptions" skipped, due to false condition; ('@(ClCompile)' != '') was evaluated as ('' != '').
        Target "SetModuleDependencies" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(EnableCppModules)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
-     1>Target "MakeDirsForCl" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "MakeDirsForCl" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForCl" in project "RunBochs.vcxproj".
@@ -1174,57 +1174,57 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Target "NoAnalysisToolEnabledWarning" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='false' AND '$(EnableClangTidyCodeAnalysis)'=='false') was evaluated as ('false'=='true' AND 'true'=='false' AND 'false'=='false').
        Target "RunSelectedFileClangTidy" skipped, due to false condition; ('$(RunClangCppAnalysis)'=='true' AND '$(SelectedFiles)'!='') was evaluated as ('false'=='true' AND ''!='').
        Target "MicrosoftAnalysisIncompatiableWithClangCl" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='true' AND '$(UseClangCl)'=='true') was evaluated as ('false'=='true' AND 'true'=='true' AND ''=='true').
-     1>Target "AfterClCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "AfterClCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "AfterClCompile" in project "RunBochs.vcxproj".
-     1>Target "_ClCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Target "_ClCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildCompileAction" depends on it):
      1>Done building target "_ClCompile" in project "RunBochs.vcxproj".
        Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
-     1>Target "BeforeResourceCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Target "BeforeResourceCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ResourceCompile" depends on it):
      1>Done building target "BeforeResourceCompile" in project "RunBochs.vcxproj".
-     1>Target "MakeDirsForResourceCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Target "MakeDirsForResourceCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ResourceCompile" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForResourceCompile" in project "RunBochs.vcxproj".
        Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
-     1>Target "AfterResourceCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Target "AfterResourceCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_ResourceCompile" depends on it):
      1>Done building target "AfterResourceCompile" in project "RunBochs.vcxproj".
-     1>Target "_ResourceCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Target "_ResourceCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildCompileAction" depends on it):
      1>Done building target "_ResourceCompile" in project "RunBochs.vcxproj".
        Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
        Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
-     1>Target "AfterBuildCompileEvent" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Target "AfterBuildCompileEvent" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildCompileAction" depends on it):
      1>Done building target "AfterBuildCompileEvent" in project "RunBochs.vcxproj".
-     1>Target "_BuildCompileAction" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildCompile" depends on it):
+     1>Target "_BuildCompileAction" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildCompile" depends on it):
      1>Done building target "_BuildCompileAction" in project "RunBochs.vcxproj".
-     1>Target "BuildCompile" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Target "BuildCompile" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
      1>Done building target "BuildCompile" in project "RunBochs.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
-     1>Target "BuildLinkTraverse" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildLink" depends on it):
+     1>Target "BuildLinkTraverse" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildLink" depends on it):
        Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
      1>Done building target "BuildLinkTraverse" in project "RunBochs.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "ComputeLegacyManifestEmbedding" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "ComputeLegacyManifestEmbedding" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
      1>Done building target "ComputeLegacyManifestEmbedding" in project "RunBochs.vcxproj".
-     1>Target "BeforeLink" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
+     1>Target "BeforeLink" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
      1>Done building target "BeforeLink" in project "RunBochs.vcxproj".
-     1>Target "ComputeRCOutputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
+     1>Target "ComputeRCOutputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
      1>Done building target "ComputeRCOutputs" in project "RunBochs.vcxproj".
-     1>Target "ComputeRCGeneratedLinkInputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeRCGeneratedLinkInputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
      1>Done building target "ComputeRCGeneratedLinkInputs" in project "RunBochs.vcxproj".
-     1>Target "ComputeManifestGeneratedLinkerInputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeManifestGeneratedLinkerInputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
      1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "RunBochs.vcxproj".
        Target "ComputeCustomBuildOutput" skipped. Previously built successfully.
        Target "ComputeCLOutputs" skipped, due to false condition; ('@(ClCompile)' != '') was evaluated as ('' != '').
-     1>Target "ComputeCLGeneratedLinkInputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeCLGeneratedLinkInputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
      1>Done building target "ComputeCLGeneratedLinkInputs" in project "RunBochs.vcxproj".
-     1>Target "ComputeLinkInputsFromProject" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
+     1>Target "ComputeLinkInputsFromProject" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
      1>Done building target "ComputeLinkInputsFromProject" in project "RunBochs.vcxproj".
        Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
        Target "ComputeManifestInputsTargets" skipped, due to false condition; ('@(Link)' != '') was evaluated as ('' != '').
        Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('MT' == 'LINK' and '' != '').
-     1>Target "AssignTargetPaths" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareResourceNames" depends on it):
+     1>Target "AssignTargetPaths" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareResourceNames" depends on it):
        Task "AssignTargetPath"
        Done executing task "AssignTargetPath".
        Task "AssignTargetPath"
@@ -1236,7 +1236,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
      1>Done building target "AssignTargetPaths" in project "RunBochs.vcxproj".
        Target "AssignTargetPaths" skipped. Previously built successfully.
-     1>Target "SplitResourcesByCulture" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareResourceNames" depends on it):
+     1>Target "SplitResourcesByCulture" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareResourceNames" depends on it):
        Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
        Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
        Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
@@ -1245,16 +1245,16 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Done executing task "AssignCulture".
      1>Done building target "SplitResourcesByCulture" in project "RunBochs.vcxproj".
        Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
-     1>Target "CreateCustomManifestResourceNames" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareResourceNames" depends on it):
+     1>Target "CreateCustomManifestResourceNames" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareResourceNames" depends on it):
      1>Done building target "CreateCustomManifestResourceNames" in project "RunBochs.vcxproj".
-     1>Target "PrepareResourceNames" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
+     1>Target "PrepareResourceNames" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
      1>Done building target "PrepareResourceNames" in project "RunBochs.vcxproj".
-     1>Target "MakeDirsForLink" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
+     1>Target "MakeDirsForLink" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForLink" in project "RunBochs.vcxproj".
        Target "DoLinkOutputFilesMatch" skipped, due to false condition; ('@(Link)' != '') was evaluated as ('' != '').
-     1>Target "PreLinkEvent" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
+     1>Target "PreLinkEvent" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
        Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
        Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
      1>Done building target "PreLinkEvent" in project "RunBochs.vcxproj".
@@ -1262,17 +1262,17 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
        Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false' and '$(CLRSupport)'!='NetCore') was evaluated as ('false'!='' and 'false'!='false' and 'false'!='NetCore').
        Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
-     1>Target "AfterLink" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
+     1>Target "AfterLink" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_Link" depends on it):
      1>Done building target "AfterLink" in project "RunBochs.vcxproj".
-     1>Target "_Link" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Link" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_Link" in project "RunBochs.vcxproj".
-     1>Target "_ALink" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_ALink" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_ALink" in project "RunBochs.vcxproj".
        Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
-     1>Target "_Manifest" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Manifest" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
      1>Done building target "_Manifest" in project "RunBochs.vcxproj".
-     1>Target "RegisterOutput" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "RegisterOutput" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and ''=='true' and ''!='true').
        Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and ''=='true' and ''=='true').
        Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and ''=='true' and ''!='true').
@@ -1281,66 +1281,66 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
      1>Done building target "RegisterOutput" in project "RunBochs.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "ResolvedXDCMake" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_XdcMake" depends on it):
+     1>Target "ResolvedXDCMake" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_XdcMake" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
      1>Done building target "ResolvedXDCMake" in project "RunBochs.vcxproj".
-     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_XdcMake" depends on it):
+     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_XdcMake" depends on it):
      1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "RunBochs.vcxproj".
-     1>Target "MakeDirsForXdcMake" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_XdcMake" depends on it):
+     1>Target "MakeDirsForXdcMake" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_XdcMake" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForXdcMake" in project "RunBochs.vcxproj".
        Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
-     1>Target "_XdcMake" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_XdcMake" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_XdcMake" in project "RunBochs.vcxproj".
-     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BscMake" depends on it):
+     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BscMake" depends on it):
      1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "RunBochs.vcxproj".
-     1>Target "MakeDirsForBscMake" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BscMake" depends on it):
+     1>Target "MakeDirsForBscMake" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BscMake" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForBscMake" in project "RunBochs.vcxproj".
        Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
        Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-     1>Target "_BscMake" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_BscMake" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_BscMake" in project "RunBochs.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
-     1>Target "BuiltProjectOutputGroup" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CreateRecipeFile" depends on it):
+     1>Target "BuiltProjectOutputGroup" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CreateRecipeFile" depends on it):
      1>Done building target "BuiltProjectOutputGroup" in project "RunBochs.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "PrepareResourceNames" skipped. Previously built successfully.
-     1>Target "SatelliteDllsProjectOutputGroup" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CreateRecipeFile" depends on it):
+     1>Target "SatelliteDllsProjectOutputGroup" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CreateRecipeFile" depends on it):
      1>Done building target "SatelliteDllsProjectOutputGroup" in project "RunBochs.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "AssignTargetPaths" skipped. Previously built successfully.
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "AssignTargetPaths" skipped. Previously built successfully.
-     1>Target "MakeDirsForFxc" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ContentFilesProjectOutputGroup" depends on it):
+     1>Target "MakeDirsForFxc" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "ContentFilesProjectOutputGroup" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForFxc" in project "RunBochs.vcxproj".
        Target "_CreateCopyFileItems" skipped, due to false condition; ('@(CopyFileToFolders)' != '') was evaluated as ('' != '').
-     1>Target "ContentFilesProjectOutputGroup" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CreateRecipeFile" depends on it):
+     1>Target "ContentFilesProjectOutputGroup" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CreateRecipeFile" depends on it):
        Task "AssignTargetPath" skipped, due to false condition; ('@(ContentFilesProjectOutputGroupOutputFullPath)' != '' and '%(ContentFilesProjectOutputGroupOutputFullPath.RootFolder)' != '') was evaluated as ('' != '' and '' != '').
        Task "AssignTargetPath" skipped, due to false condition; ('@(ContentFilesProjectOutputGroupOutputFullPath)' != '' and '%(ContentFilesProjectOutputGroupOutputFullPath.RootFolder)' == '') was evaluated as ('' != '' and '' == '').
      1>Done building target "ContentFilesProjectOutputGroup" in project "RunBochs.vcxproj".
        Target "GetReferencedVCProjectsInfo" skipped. Previously built successfully.
-     1>Target "CreateRecipeFile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "CreateRecipeFile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
        Using "GenerateDesktopDeployRecipe" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "GenerateDesktopDeployRecipe"
        Done executing task "GenerateDesktopDeployRecipe".
      1>Done building target "CreateRecipeFile" in project "RunBochs.vcxproj".
-     1>Target "_GenerateSatelliteAssemblyInputs" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
+     1>Target "_GenerateSatelliteAssemblyInputs" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
        Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
        Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
      1>Done building target "_GenerateSatelliteAssemblyInputs" in project "RunBochs.vcxproj".
        Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
        Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
-     1>Target "CreateSatelliteAssemblies" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "CreateSatelliteAssemblies" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "CreateSatelliteAssemblies" in project "RunBochs.vcxproj".
        Target "CopyLocalNativeReference" skipped, due to false condition; ('$(CopyLocalProjectReference)' == 'true') was evaluated as ('false' == 'true').
-     1>Target "_Appverifier" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Appverifier" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_Appverifier" in project "RunBochs.vcxproj".
-     1>Target "_Deploy" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Deploy" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_Deploy" in project "RunBochs.vcxproj".
        Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
        Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
@@ -1348,17 +1348,17 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
        Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
        Target "_GetProjectReferenceTargetFrameworkProperties" skipped. Previously built successfully.
-     1>Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+     1>Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
      1>Done building target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" in project "RunBochs.vcxproj".
-     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
        Task "AssignTargetPath"
        Done executing task "AssignTargetPath".
      1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "RunBochs.vcxproj".
-     1>Target "GetCopyToOutputDirectoryItems" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+     1>Target "GetCopyToOutputDirectoryItems" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
        Task "CallTarget"
        Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" skipped. Previously built successfully.
        Target "_AddOutputPathToGlobalPropertiesToRemove" skipped. Previously built successfully.
-     1>Target "_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+     1>Target "_GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
        Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
        Task "AssignTargetPath"
        Done executing task "AssignTargetPath".
@@ -1367,7 +1367,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Task "CallTarget"
        Target "AssignTargetPaths" skipped. Previously built successfully.
        Target "_PopulateCommonStateForGetCopyToOutputDirectoryItems" skipped. Previously built successfully.
-     1>Target "_GetCopyToOutputDirectoryItemsFromThisProject" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+     1>Target "_GetCopyToOutputDirectoryItemsFromThisProject" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
        Task "AssignTargetPath"
        Done executing task "AssignTargetPath".
      1>Done building target "_GetCopyToOutputDirectoryItemsFromThisProject" in project "RunBochs.vcxproj".
@@ -1375,14 +1375,14 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
      1>Done building target "GetCopyToOutputDirectoryItems" in project "RunBochs.vcxproj".
        Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
        Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
-     1>Target "_CopySourceItemsToOutputDirectory" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Target "_CopySourceItemsToOutputDirectory" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
      1>Done building target "_CopySourceItemsToOutputDirectory" in project "RunBochs.vcxproj".
        Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
        Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
-     1>Target "_CheckForCompileOutputs" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Target "_CheckForCompileOutputs" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
      1>Done building target "_CheckForCompileOutputs" in project "RunBochs.vcxproj".
        Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
-     1>Target "CopyFilesToOutputDirectory" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForRun" depends on it):
+     1>Target "CopyFilesToOutputDirectory" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForRun" depends on it):
        Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
        Task "CopyRefAssembly" skipped, due to false condition; ('$(ProduceReferenceAssembly)' == 'true' and '$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('false' == 'true' and 'true' == 'true' and 'true' != 'true').
        Task "Message" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true') was evaluated as ('true' == 'true' and 'true'!='true').
@@ -1395,10 +1395,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
        Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
      1>Done building target "CopyFilesToOutputDirectory" in project "RunBochs.vcxproj".
-     1>Target "PrepareForRun" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "PrepareForRun" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "PrepareForRun" in project "RunBochs.vcxproj".
        Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-     1>Target "PostBuildEvent" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "PostBuildEvent" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and 'cmd.exe /c "cd ../../.. & run.cmd"' != '').
        Task "Exec"
          cmd.exe /c "cd ../../.. & run.cmd"
@@ -1441,7 +1441,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
          00000000000i[      ]   SB16 support: yes
          00000000000i[      ]   USB support: yes
          00000000000i[      ]   VGA extension support: vbe cirrus voodoo
-         00000000000i[MEM0  ] allocated memory at 042F3020. after alignment, vector=042F4000
+         00000000000i[MEM0  ] allocated memory at 04265020. after alignment, vector=04266000
          00000000000i[MEM0  ] 512.00MB
          00000000000i[MEM0  ] mem block size = 0x00100000, blocks=512
          00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('.\utils\Bochs-2.6.8\BIOS-bochs-latest')
@@ -1453,7 +1453,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
          00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
          00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
          00000000000i[CMOS  ] Using local time for initial clock
-         00000000000i[CMOS  ] Setting initial clock to: Tue Nov 18 21:07:49 2025 (time0=1763492869)
+         00000000000i[CMOS  ] Setting initial clock to: Sat Nov 22 20:57:13 2025 (time0=1763837833)
          00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
          00000000000i[DMA   ] channel 4 used by cascade
          00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -1603,57 +1603,57 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
          00001503768i[BXVGA ] VBE known Display Interface b0c0
          00001503800i[BXVGA ] VBE known Display Interface b0c5
          00001506725i[VBIOS ] VBE Bios $Id: vbe.c,v 1.65 2014/07/08 18:02:25 vruppert Exp $
-         02022275513i[BIOS  ] Booting from 0000:7c00
-         02032399653i[CPU0  ] [2032399653] Stopped on MAGIC BREAKPOINT
-         02032407462i[CPU0  ] [2032407462] Stopped on MAGIC BREAKPOINT
-         02032421497i[SER   ] com1: FIFO enabled
-         41717793120i[CPU0  ] CPU is in long mode (halted)
-         41717793120i[CPU0  ] CS.mode = 64 bit
-         41717793120i[CPU0  ] SS.mode = 64 bit
-         41717793120i[CPU0  ] EFER   = 0x00000500
-         41717793120i[CPU0  ] | RAX=0000000000000020  RBX=0000000000400000
-         41717793120i[CPU0  ] | RCX=0000000000000000  RDX=0000000000000020
-         41717793120i[CPU0  ] | RSP=00000000001fffd0  RBP=0000000000000000
-         41717793120i[CPU0  ] | RSI=0000000000020000  RDI=000000000020a000
-         41717793120i[CPU0  ] |  R8=00000000001fff28   R9=0000000000000021
-         41717793120i[CPU0  ] | R10=0000000000000000  R11=0000000000000000
-         41717793120i[CPU0  ] | R12=0000000000000000  R13=0000000000000000
-         41717793120i[CPU0  ] | R14=0000000000000000  R15=0000000000000000
-         41717793120i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf ZF af PF cf
-         41717793120i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
-         41717793120i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 0
-         41717793120i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         41717793120i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         41717793120i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         41717793120i[CPU0  ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         41717793120i[CPU0  ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         41717793120i[CPU0  ] |  MSR_FS_BASE:0000000000000000
-         41717793120i[CPU0  ] |  MSR_GS_BASE:0000000000000000
-         41717793120i[CPU0  ] | RIP=0000000000202501 (0000000000202501)
-         41717793120i[CPU0  ] | CR0=0xe0000011 CR2=0x0000000000000000
-         41717793120i[CPU0  ] | CR3=0x00205000 CR4=0x00000620
-         41717793120i[CMOS  ] Last time is 1763503298 (Wed Nov 19 00:01:38 2025)
-         41717793120i[SIM   ] quit_sim called with exit code 0
+         02599210493i[BIOS  ] Booting from 0000:7c00
+         02609334633i[CPU0  ] [2609334633] Stopped on MAGIC BREAKPOINT
+         02609342442i[CPU0  ] [2609342442] Stopped on MAGIC BREAKPOINT
+         02609356472i[SER   ] com1: FIFO enabled
+         95157043895i[CPU0  ] CPU is in long mode (halted)
+         95157043895i[CPU0  ] CS.mode = 64 bit
+         95157043895i[CPU0  ] SS.mode = 64 bit
+         95157043895i[CPU0  ] EFER   = 0x00000500
+         95157043895i[CPU0  ] | RAX=0000000000000020  RBX=0000000000400000
+         95157043895i[CPU0  ] | RCX=0000000000000000  RDX=0000000000000020
+         95157043895i[CPU0  ] | RSP=00000000001fffd0  RBP=0000000000000000
+         95157043895i[CPU0  ] | RSI=0000000000020000  RDI=000000000020a000
+         95157043895i[CPU0  ] |  R8=00000000001fff28   R9=0000000000000021
+         95157043895i[CPU0  ] | R10=0000000000000000  R11=0000000000000000
+         95157043895i[CPU0  ] | R12=0000000000000000  R13=0000000000000000
+         95157043895i[CPU0  ] | R14=0000000000000000  R15=0000000000000000
+         95157043895i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf ZF af PF cf
+         95157043895i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
+         95157043895i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 0
+         95157043895i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         95157043895i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         95157043895i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         95157043895i[CPU0  ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         95157043895i[CPU0  ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         95157043895i[CPU0  ] |  MSR_FS_BASE:0000000000000000
+         95157043895i[CPU0  ] |  MSR_GS_BASE:0000000000000000
+         95157043895i[CPU0  ] | RIP=00000000002024f5 (00000000002024f5)
+         95157043895i[CPU0  ] | CR0=0xe0000011 CR2=0x0000000000000000
+         95157043895i[CPU0  ] | CR3=0x00205000 CR4=0x00000620
+         95157043895i[CMOS  ] Last time is 1763861622 (Sun Nov 23 03:33:42 2025)
+         95157043895i[SIM   ] quit_sim called with exit code 0
        Done executing task "Exec".
      1>Done building target "PostBuildEvent" in project "RunBochs.vcxproj".
-     1>Target "_BuildLinkAction" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildLink" depends on it):
+     1>Target "_BuildLinkAction" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildLink" depends on it):
      1>Done building target "_BuildLinkAction" in project "RunBochs.vcxproj".
-     1>Target "BuildLink" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Target "BuildLink" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
      1>Done building target "BuildLink" in project "RunBochs.vcxproj".
-     1>Target "AfterBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Target "AfterBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
      1>Done building target "AfterBuild" in project "RunBochs.vcxproj".
        Target "_CheckForCompileOutputs" skipped. Previously built successfully.
        Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
-     1>Target "_CleanGetCurrentAndPriorFileWrites" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "IncrementalClean" depends on it):
+     1>Target "_CleanGetCurrentAndPriorFileWrites" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "IncrementalClean" depends on it):
        Task "ReadLinesFromFile"
        Done executing task "ReadLinesFromFile".
        Task "ConvertToAbsolutePath"
        Done executing task "ConvertToAbsolutePath".
        Task "FindUnderPath"
-         Comparison path is "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs".
+         Comparison path is "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs".
        Done executing task "FindUnderPath".
        Task "FindUnderPath"
-         Comparison path is "C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\".
+         Comparison path is "C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\".
        Done executing task "FindUnderPath".
        Task "FindUnderPath"
          Comparison path is "x64\Release\".
@@ -1661,9 +1661,9 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Task "RemoveDuplicates"
        Done executing task "RemoveDuplicates".
      1>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "RunBochs.vcxproj".
-     1>Target "IncrementalClean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Target "IncrementalClean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
        Task "FindUnderPath"
-         Comparison path is "C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\".
+         Comparison path is "C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\".
        Done executing task "FindUnderPath".
        Task "FindUnderPath"
          Comparison path is "x64\Release\".
@@ -1674,12 +1674,12 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
        Done executing task "RemoveDuplicates".
        Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as (''!='').
      1>Done building target "IncrementalClean" in project "RunBochs.vcxproj".
-     1>Target "TlogCleanup" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Target "TlogCleanup" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
        Using "CleanupStaleTlogItems" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "CleanupStaleTlogItems"
        Done executing task "CleanupStaleTlogItems".
      1>Done building target "TlogCleanup" in project "RunBochs.vcxproj".
-     1>Target "FinalizeBuildStatus" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Target "FinalizeBuildStatus" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
        Task "Delete"
          Deleting file "x64\Release\RunBochs.tlog\unsuccessfulbuild".
        Done executing task "Delete".
@@ -1687,17 +1687,17 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\PSM\
          Touching "x64\Release\RunBochs.tlog\RunBochs.lastbuildstate".
        Done executing task "Touch".
      1>Done building target "FinalizeBuildStatus" in project "RunBochs.vcxproj".
-     1>Target "Build" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
+     1>Target "Build" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
      1>Done building target "Build" in project "RunBochs.vcxproj".
-     1>Target "AfterRebuild" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
+     1>Target "AfterRebuild" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
      1>Done building target "AfterRebuild" in project "RunBochs.vcxproj".
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "Rebuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (entry point):
+     1>Target "Rebuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (entry point):
      1>Done building target "Rebuild" in project "RunBochs.vcxproj".
-     1>Done Building Project "C:\Users\Lori\Desktop\PSM\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:27.28
+Time Elapsed 00:00:39.23

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\Lori\Desktop\PSM\MiniOS\kernel\x64\Release\CreateBootDisk</FullPath>
+      <FullPath>C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\CreateBootDisk</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
