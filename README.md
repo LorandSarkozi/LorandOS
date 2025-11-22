@@ -1,4 +1,4 @@
-# MiniOS
+# LorandOS
 
 A minimal operating system kernel written in C/Assembly for x86/x64 architecture with a functional CLI and text editor.
 
