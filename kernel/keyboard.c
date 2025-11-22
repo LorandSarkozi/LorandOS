@@ -1,56 +1,14 @@
 #include "keyboard.h"
 #include "pic.h"
 #include "screen.h"
+#include "cli.h"
 #include <intrin.h>
 
 static BYTE gShiftPressed = 0;
 static BYTE gExtendedScancode = 0;
 static KEYCODE gLastKey = KEY_UNKNOWN;
-static int gCursorPos = 0;
+static BYTE gCapsLockOn = 0;
 
-static void PutCharAtCursor(char c)
-{
-    extern PSCREEN gVideo;
-    
-    if (c == '\n')
-    {
-        gCursorPos = ((gCursorPos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
-    }
-    else if (c == '\b')
-    {
-        if (gCursorPos > 0)
-        {
-            gCursorPos--;
-            gVideo[gCursorPos].c = ' ';
-            gVideo[gCursorPos].color = 0x0F;
-        }
-    }
-    else
-    {
-        if (gCursorPos < MAX_OFFSET)
-        {
-            gVideo[gCursorPos].c = c;
-            gVideo[gCursorPos].color = 0x0F;
-            gCursorPos++;
-        }
-    }
-    
-    if (gCursorPos >= MAX_OFFSET)
-    {
- 
-        for (int i = 0; i < MAX_OFFSET - MAX_COLUMNS; i++)
-        {
-            gVideo[i] = gVideo[i + MAX_COLUMNS];
-        }
-  
-        for (int i = MAX_OFFSET - MAX_COLUMNS; i < MAX_OFFSET; i++)
-        {
-            gVideo[i].c = ' ';
-            gVideo[i].color = 0x0F;
-        }
-        gCursorPos = MAX_OFFSET - MAX_COLUMNS;
-    }
-}
 void Keyboard_Handler(void)
 {
     BYTE scancode;
@@ -110,17 +68,42 @@ void Keyboard_Handler(void)
     }
     
     gLastKey = key;
-
-    if (key != KEY_UNKNOWN && key < 256)
+    
+    // Handle CapsLock toggle
+    if (key == KEY_CAPSLOCK)
     {
-        char c = (char)key;
-       
-        if (c >= 'a' && c <= 'z' && gShiftPressed)
+        gCapsLockOn = !gCapsLockOn;
+        PIC_SendEOI(IRQ_KEYBOARD);
+        return;
+    }
+
+    // Determine character to send to CLI
+    char c = 0;
+    
+    // Check if it's a special key (not printable)
+    if (key == KEY_RETURN || key == KEY_BACKSPACE || key == KEY_ESCAPE ||
+        key == KEY_UP || key == KEY_DOWN || key == KEY_LEFT || key == KEY_RIGHT ||
+        key == KEY_TAB || key >= 0x1000)  // Extended keys
+    {
+        // Special keys - don't set character
+        c = 0;
+    }
+    else if (key != KEY_UNKNOWN && key < 256)
+    {
+        c = (char)key;
+        
+        // Apply CapsLock and Shift for letters
+        if (c >= 'a' && c <= 'z')
         {
-            c = c - 'a' + 'A';
+            BYTE shouldUppercase = (gShiftPressed && !gCapsLockOn) || (!gShiftPressed && gCapsLockOn);
+            if (shouldUppercase)
+            {
+                c = c - 'a' + 'A';
+            }
         }
         else if (gShiftPressed)
         {
+            // Apply shift for special characters
             switch (c)
             {
                 case '1': c = '!'; break;
@@ -146,17 +129,10 @@ void Keyboard_Handler(void)
                 case '`': c = '~'; break;
             }
         }
-        
-        PutCharAtCursor(c);
     }
-    else if (key == KEY_RETURN)
-    {
-        PutCharAtCursor('\n');
-    }
-    else if (key == KEY_BACKSPACE)
-    {
-        PutCharAtCursor('\b');
-    }
+    
+    // Send key to CLI for processing
+    CLI_HandleKey(key, c);
     
     PIC_SendEOI(IRQ_KEYBOARD);
 }

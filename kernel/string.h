@@ -115,4 +115,8 @@ cl_vsnprintf(
 #define atoi32(addr,buf,base)       atoi((addr),(buf),(base),FALSE)
 #define atoi64(addr,buf,base)       atoi((addr),(buf),(base),TRUE)
 
+// Standard C library compatibility
+void* memset(void* ptr, int value, QWORD num);
+void cl_memset(PVOID address, BYTE value, DWORD size);
+
 #endif // _STRING_H_

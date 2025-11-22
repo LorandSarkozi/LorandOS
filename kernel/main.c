@@ -4,6 +4,7 @@
 #include "pic.h"
 #include "pit.h"
 #include "keyboard.h"
+#include "cli.h"
 
 extern void TriggerPF(void);
 extern void TriggerUD2(void);
@@ -37,7 +38,8 @@ void KernelMain()
     Log("Enabling interrupts");
     __sti();
     
-    Log("System ready! Type on keyboard...");
+    Log("Initializing CLI");
+    CLI_Init();
 
     while (1)
     {

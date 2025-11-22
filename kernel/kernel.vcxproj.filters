@@ -15,39 +15,72 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c">
+    <ClCompile Include="cli.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="screen.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="logging.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="string.c">
+    <ClCompile Include="irq_dispatch.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="isr_dispatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="keyboard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logging.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rtc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="screen.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="main.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="logging.h">
+    <ClInclude Include="ata_commands.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="bochs_map.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ata_commands.h">
+    <ClInclude Include="cli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rtc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="scancode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="string.h">

@@ -781,7 +781,7 @@
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
-Build started 22/11/2025 20:57:10.
+Build started 22/11/2025 21:50:53.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\MiniOS\utils\VS\CreateBootDisk\CreateBootDisk.vcxproj" on node 2 (Rebuild target(s)).
      1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\CreateBootDisk\CreateBootDisk.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
@@ -806,10 +806,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
      1>Target "SetTelemetryEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\CreateBootDisk\CreateBootDisk.vcxproj" (target "Rebuild" depends on it):
        Using "SetEnv" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={CA2E19C4-C27A-4ED2-B413-D6BB9BB0650E}
+         VSTEL_SolutionSessionID={93AC80DC-1E58-46CF-9028-7B1389A5B2A5}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=3467594187
+         VSTEL_CurrentSolutionBuildID=1390968047
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={44d9b088-63db-4a34-af34-c5e531d59bbc}
@@ -1271,4 +1271,4 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.80
+Time Elapsed 00:00:01.67

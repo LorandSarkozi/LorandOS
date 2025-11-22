@@ -1,12 +1,14 @@
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\vc143.pdb
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\string.obj
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\screen.obj
+c:\users\lori\desktop\minios\kernel\kernel\x64\release\rtc.obj
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\pit.obj
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\pic.obj
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\main.obj
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\logging.obj
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\keyboard.obj
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\irq_dispatch.obj
+c:\users\lori\desktop\minios\kernel\kernel\x64\release\cli.obj
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\isr_dispatch.obj
 c:\users\lori\desktop\minios\kernel\kernel\x64\release\__init.obj
 c:\users\lori\desktop\minios\kernel\x64\release\kernel.exe

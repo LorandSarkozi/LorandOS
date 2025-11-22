@@ -131,6 +131,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cli.c" />
     <ClCompile Include="irq_dispatch.c" />
     <ClCompile Include="isr_dispatch.cpp" />
     <ClCompile Include="keyboard.c" />
@@ -138,17 +139,20 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="pic.c" />
     <ClCompile Include="pit.c" />
+    <ClCompile Include="rtc.c" />
     <ClCompile Include="screen.c" />
     <ClCompile Include="string.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ata_commands.h" />
     <ClInclude Include="bochs_map.h" />
+    <ClInclude Include="cli.h" />
     <ClInclude Include="logging.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="pic.h" />
     <ClInclude Include="pit.h" />
     <ClInclude Include="keyboard.h" />
+    <ClInclude Include="rtc.h" />
     <ClInclude Include="scancode.h" />
     <ClInclude Include="screen.h" />
     <ClInclude Include="string.h" />

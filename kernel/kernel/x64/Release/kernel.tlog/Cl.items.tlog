@@ -1,3 +1,4 @@
+C:\Users\Lori\Desktop\MiniOS\kernel\cli.c;C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\cli.obj
 C:\Users\Lori\Desktop\MiniOS\kernel\irq_dispatch.c;C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\irq_dispatch.obj
 C:\Users\Lori\Desktop\MiniOS\kernel\isr_dispatch.cpp;C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\isr_dispatch.obj
 C:\Users\Lori\Desktop\MiniOS\kernel\keyboard.c;C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\keyboard.obj
@@ -5,5 +6,6 @@ C:\Users\Lori\Desktop\MiniOS\kernel\logging.c;C:\Users\Lori\Desktop\MiniOS\kerne
 C:\Users\Lori\Desktop\MiniOS\kernel\main.c;C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\main.obj
 C:\Users\Lori\Desktop\MiniOS\kernel\pic.c;C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\pic.obj
 C:\Users\Lori\Desktop\MiniOS\kernel\pit.c;C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\pit.obj
+C:\Users\Lori\Desktop\MiniOS\kernel\rtc.c;C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\rtc.obj
 C:\Users\Lori\Desktop\MiniOS\kernel\screen.c;C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\screen.obj
 C:\Users\Lori\Desktop\MiniOS\kernel\string.c;C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\string.obj

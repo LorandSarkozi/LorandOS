@@ -860,4 +860,10 @@ cl_strtrim(
     }
 }
 
-
+// Standard C library wrapper functions for linker compatibility
+#pragma function(memset)
+void* memset(void* ptr, int value, QWORD num)
+{
+    cl_memset(ptr, (BYTE)value, (DWORD)num);
+    return ptr;
+}
