@@ -52,7 +52,7 @@
        Property reassignment: $(_PropertySheetDisplayName)="Multi-byte Character Support" (previous value: "Core Windows Libraries") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.MultiByteCharSupport.props (15,5)
        Property reassignment: $(_PropertySheetDisplayName)="Application" (previous value: "Multi-byte Character Support") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Application.props (15,5)
        Property reassignment: $(_PropertySheetDisplayName)="Whole Program Optimization" (previous value: "Application") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WholeProgramOptimization.props (15,5)
-       Property 'Path' with value 'C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\PROGRA~2\Aldec\ACTIVE~1.3\BIN;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Lori\AppData\Local\Programs\Python\Python312;C:\Users\Lori\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\apache-maven-4.0.0-beta-5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Ruby31-x64\bin;C:\Users\Lori\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lori\AppData\Local\Microsoft\WindowsApps;C:\ghcup\bin;C:\Users\Lori\AppData\Roaming\npm;C:\Users\Lori\AppData\Local\Programs\Windsurf\bin' expanded from the environment.
+       Property 'Path' with value 'C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\PROGRA~2\Aldec\ACTIVE~1.3\BIN;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Lori\AppData\Local\Programs\Python\Python312;C:\Users\Lori\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\apache-maven-4.0.0-beta-5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Ruby31-x64\bin;C:\Users\Lori\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lori\AppData\Local\Microsoft\WindowsApps;C:\ghcup\bin;C:\Users\Lori\AppData\Roaming\npm;C:\Users\Lori\AppData\Local\Programs\Windsurf\bin;C:\Users\Lori\AppData\Local\GitHubDesktop\bin' expanded from the environment.
        Property 'SystemRoot' with value 'C:\WINDOWS' expanded from the environment.
        Property reassignment: $(GenerateManifest)="false" (previous value: "true") at C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj (49,5)
        The "SolutionExt" property is a global property, and cannot be modified.
@@ -791,7 +791,7 @@
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
-Build started 22/11/2025 21:50:52.
+Build started 24/11/2025 19:59:50.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" on node 2 (Rebuild target(s)).
      1>Project file contains ToolsVersion="14.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
@@ -818,10 +818,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
      1>Target "SetTelemetryEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (target "Rebuild" depends on it):
        Using "SetEnv" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={93AC80DC-1E58-46CF-9028-7B1389A5B2A5}
+         VSTEL_SolutionSessionID={6844C42D-DDD7-46A8-BD67-BB92856A68D9}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=1390968047
+         VSTEL_CurrentSolutionBuildID=1608713629
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={7703C7CC-77F7-4D03-9AD0-482B24B1CF0B}
@@ -975,7 +975,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
      1>Done building target "AddExternalIncludDirectoriesToPaths" in project "kernel.vcxproj".
      1>Target "SetBuildDefaultEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (target "PrepareForBuild" depends on it):
        Task "SetEnv"
-         PATH=D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;D:\New folder\Common7\tools;D:\New folder\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;D:\New folder\MSBuild\Current\Bin\amd64;C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;D:\New folder\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\PROGRA~2\Aldec\ACTIVE~1.3\BIN;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Lori\AppData\Local\Programs\Python\Python312;C:\Users\Lori\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\apache-maven-4.0.0-beta-5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Ruby31-x64\bin;C:\Users\Lori\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lori\AppData\Local\Microsoft\WindowsApps;C:\ghcup\bin;C:\Users\Lori\AppData\Roaming\npm;C:\Users\Lori\AppData\Local\Programs\Windsurf\bin;
+         PATH=D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;D:\New folder\Common7\tools;D:\New folder\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;D:\New folder\MSBuild\Current\Bin\amd64;C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;D:\New folder\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\PROGRA~2\Aldec\ACTIVE~1.3\BIN;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Lori\AppData\Local\Programs\Python\Python312;C:\Users\Lori\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\apache-maven-4.0.0-beta-5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Ruby31-x64\bin;C:\Users\Lori\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lori\AppData\Local\Microsoft\WindowsApps;C:\ghcup\bin;C:\Users\Lori\AppData\Roaming\npm;C:\Users\Lori\AppData\Local\Programs\Windsurf\bin;C:\Users\Lori\AppData\Local\GitHubDesktop\bin;
        Done executing task "SetEnv".
        Task "SetEnv"
          LIB=D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64;;;D:\New folder\VC\Auxiliary\VS\UnitTest\lib;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64;lib\um\x64;
@@ -1344,13 +1344,13 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
        Task "CL"
          Forcing recompile of all source files due to missing PDB "kernel\x64\Release\vc143.pdb".
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2064
-           SARIF_OUTPUT_PIPE=2096
+           VS_UNICODE_OUTPUT=2836
+           SARIF_OUTPUT_PIPE=1292
          D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TC /FC /errorReport:prompt /noover cli.c irq_dispatch.c keyboard.c logging.c main.c pic.c pit.c rtc.c screen.c string.c
          Tracking command:
-         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\CLI.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\IRQ_DISPATCH.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KEYBOARD.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\LOGGING.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MAIN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIT.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\RTC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\SCREEN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\STRING.C" /b MSBuildConsole_CancelEvent4c89d1c637a74238b267c5cfeb97e3de  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TC /FC /errorReport:prompt /noover cli.c irq_dispatch.c keyboard.c logging.c main.c pic.c pit.c rtc.c screen.c string.c
+         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\CLI.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\IRQ_DISPATCH.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KEYBOARD.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\LOGGING.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MAIN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIT.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\RTC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\SCREEN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\STRING.C" /b MSBuildConsole_CancelEvent9354166733934e04a89460c7824c37fd  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TC /FC /errorReport:prompt /noover cli.c irq_dispatch.c keyboard.c logging.c main.c pic.c pit.c rtc.c screen.c string.c
          cli.c
-     1>C:\Users\Lori\Desktop\MiniOS\kernel\cli.c(68,5): warning C4013: 'CursorPosition' undefined; assuming extern returning int
+     1>C:\Users\Lori\Desktop\MiniOS\kernel\cli.c(67,5): warning C4013: 'CursorPosition' undefined; assuming extern returning int
          irq_dispatch.c
          keyboard.c
          logging.c
@@ -1358,7 +1358,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          pic.c
          pit.c
          rtc.c
-     1>C:\Users\Lori\Desktop\MiniOS\kernel\rtc.c(46,38): warning C4244: 'function': conversion from 'WORD' to 'BYTE', possible loss of data
+     1>C:\Users\Lori\Desktop\MiniOS\kernel\rtc.c(51,42): warning C4244: 'function': conversion from 'WORD' to 'BYTE', possible loss of data
          screen.c
          string.c
      1>C:\Users\Lori\Desktop\MiniOS\kernel\string.c(805,33): warning C4090: 'function': different 'const' qualifiers
@@ -1375,11 +1375,11 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          Write Tracking Logs:
          	kernel\x64\Release\kernel.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1532
-           SARIF_OUTPUT_PIPE=2264
+           VS_UNICODE_OUTPUT=1728
+           SARIF_OUTPUT_PIPE=2768
          D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt /noover isr_dispatch.cpp
          Tracking command:
-         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\ISR_DISPATCH.CPP /b MSBuildConsole_CancelEvent65bdd70c73e746d48eb77ab296b8b44e  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt /noover isr_dispatch.cpp
+         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\ISR_DISPATCH.CPP /b MSBuildConsole_CancelEvent43253c7762cd4c188f36f9d456772a38  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt /noover isr_dispatch.cpp
          isr_dispatch.cpp
        Done executing task "CL".
      1>Done building target "ClCompile" in project "kernel.vcxproj".
@@ -1498,7 +1498,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
        Task "Link"
          All source files are not up-to-date: missing command TLog "C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog\link.command.1.tlog".
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2304
+           VS_UNICODE_OUTPUT=2508
          D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.exe" /NOLOGO /MANIFEST:NO /PDB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.pdb" /SUBSYSTEM:NATIVE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCGOUT:"kernel\x64\Release\kernel.iobj" /TLBID:1 /ENTRY:"ASMEntryPoint" /BASE:"0x200000" /DYNAMICBASE:NO /FIXED /NXCOMPAT:NO /IMPLIB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.lib" /MACHINE:X64 /SAFESEH:NO /FILEALIGN:0x1000 /ALIGN:0x1000 /ignore:4108 kernel\x64\Release\__init.obj
          kernel\x64\Release\cli.obj
          kernel\x64\Release\irq_dispatch.obj
@@ -1512,7 +1512,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          kernel\x64\Release\screen.obj
          kernel\x64\Release\string.obj
          Tracking command:
-         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\CLI.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\IRQ_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\ISR_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\KEYBOARD.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\LOGGING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MAIN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIT.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\RTC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\SCREEN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\STRING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\__INIT.OBJ" /b MSBuildConsole_CancelEvente9c8fa5a361349bbb2a8241970e8834b  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.exe" /NOLOGO /MANIFEST:NO /PDB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.pdb" /SUBSYSTEM:NATIVE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCGOUT:"kernel\x64\Release\kernel.iobj" /TLBID:1 /ENTRY:"ASMEntryPoint" /BASE:"0x200000" /DYNAMICBASE:NO /FIXED /NXCOMPAT:NO /IMPLIB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.lib" /MACHINE:X64 /SAFESEH:NO /FILEALIGN:0x1000 /ALIGN:0x1000 /ignore:4108 kernel\x64\Release\__init.obj
+         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\CLI.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\IRQ_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\ISR_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\KEYBOARD.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\LOGGING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MAIN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIT.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\RTC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\SCREEN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\STRING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\__INIT.OBJ" /b MSBuildConsole_CancelEventd9b0446e0fae45dea9613d5078d485b5  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.exe" /NOLOGO /MANIFEST:NO /PDB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.pdb" /SUBSYSTEM:NATIVE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCGOUT:"kernel\x64\Release\kernel.iobj" /TLBID:1 /ENTRY:"ASMEntryPoint" /BASE:"0x200000" /DYNAMICBASE:NO /FIXED /NXCOMPAT:NO /IMPLIB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.lib" /MACHINE:X64 /SAFESEH:NO /FILEALIGN:0x1000 /ALIGN:0x1000 /ignore:4108 kernel\x64\Release\__init.obj
          kernel\x64\Release\cli.obj
          kernel\x64\Release\irq_dispatch.obj
          kernel\x64\Release\isr_dispatch.obj
@@ -1751,8 +1751,8 @@ Build succeeded.
 
        "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (Rebuild target) (1) ->
        (ClCompile target) -> 
-         C:\Users\Lori\Desktop\MiniOS\kernel\cli.c(68,5): warning C4013: 'CursorPosition' undefined; assuming extern returning int
-         C:\Users\Lori\Desktop\MiniOS\kernel\rtc.c(46,38): warning C4244: 'function': conversion from 'WORD' to 'BYTE', possible loss of data
+         C:\Users\Lori\Desktop\MiniOS\kernel\cli.c(67,5): warning C4013: 'CursorPosition' undefined; assuming extern returning int
+         C:\Users\Lori\Desktop\MiniOS\kernel\rtc.c(51,42): warning C4244: 'function': conversion from 'WORD' to 'BYTE', possible loss of data
          C:\Users\Lori\Desktop\MiniOS\kernel\string.c(805,33): warning C4090: 'function': different 'const' qualifiers
 
 
@@ -1763,4 +1763,4 @@ Build succeeded.
     4 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.53
+Time Elapsed 00:00:01.41

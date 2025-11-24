@@ -296,7 +296,7 @@ void CLI_Command_Time(void)
     
     pos = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
     
-    RTC_GetDateTime(&dt);
+    PIT_GetCurrentTime(&dt);
     
     const char* timeMsg = "Current time: ";
     while (*timeMsg && pos < MAX_OFFSET)

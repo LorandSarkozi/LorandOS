@@ -47,7 +47,7 @@
        Property reassignment: $(_PropertySheetDisplayName)="Unicode Support" (previous value: "Core Windows Libraries") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.unicodesupport.props (15,5)
        Property reassignment: $(_PropertySheetDisplayName)="Application" (previous value: "Unicode Support") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Application.props (15,5)
        Property reassignment: $(_PropertySheetDisplayName)="Whole Program Optimization" (previous value: "Application") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.WholeProgramOptimization.props (15,5)
-       Property 'Path' with value 'C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\PROGRA~2\Aldec\ACTIVE~1.3\BIN;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Lori\AppData\Local\Programs\Python\Python312;C:\Users\Lori\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\apache-maven-4.0.0-beta-5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Ruby31-x64\bin;C:\Users\Lori\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lori\AppData\Local\Microsoft\WindowsApps;C:\ghcup\bin;C:\Users\Lori\AppData\Roaming\npm;C:\Users\Lori\AppData\Local\Programs\Windsurf\bin' expanded from the environment.
+       Property 'Path' with value 'C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\PROGRA~2\Aldec\ACTIVE~1.3\BIN;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Lori\AppData\Local\Programs\Python\Python312;C:\Users\Lori\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\apache-maven-4.0.0-beta-5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Ruby31-x64\bin;C:\Users\Lori\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lori\AppData\Local\Microsoft\WindowsApps;C:\ghcup\bin;C:\Users\Lori\AppData\Roaming\npm;C:\Users\Lori\AppData\Local\Programs\Windsurf\bin;C:\Users\Lori\AppData\Local\GitHubDesktop\bin' expanded from the environment.
        Property 'SystemRoot' with value 'C:\WINDOWS' expanded from the environment.
        The "SolutionExt" property is a global property, and cannot be modified.
        Property reassignment: $(ExtensionsToDeleteOnClean)="*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.exe.manifest;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.tlb;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.pdb;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.exe;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.bsc;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.ilk;C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\RunBochs.exe.intermediate.manifest;x64\Release\RunBochs.vcxproj.FileListAbsolute.txt" (previous value: "*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi") at D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets (40,5)
@@ -785,7 +785,7 @@
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
-Build started 22/11/2025 21:50:55.
+Build started 24/11/2025 19:59:53.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" on node 2 (Rebuild target(s)).
      1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
@@ -810,10 +810,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
      1>Target "SetTelemetryEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
        Using "SetEnv" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={93AC80DC-1E58-46CF-9028-7B1389A5B2A5}
+         VSTEL_SolutionSessionID={6844C42D-DDD7-46A8-BD67-BB92856A68D9}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=1390968047
+         VSTEL_CurrentSolutionBuildID=1608713629
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={d7ab6db1-8bb8-4481-8947-49a5c1a1defb}
@@ -958,7 +958,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
      1>Done building target "AddExternalIncludDirectoriesToPaths" in project "RunBochs.vcxproj".
      1>Target "SetBuildDefaultEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Current.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "PrepareForBuild" depends on it):
        Task "SetEnv"
-         PATH=D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;D:\New folder\Common7\tools;D:\New folder\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;D:\New folder\MSBuild\Current\Bin\amd64;C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;D:\New folder\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\PROGRA~2\Aldec\ACTIVE~1.3\BIN;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Lori\AppData\Local\Programs\Python\Python312;C:\Users\Lori\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\apache-maven-4.0.0-beta-5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Ruby31-x64\bin;C:\Users\Lori\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lori\AppData\Local\Microsoft\WindowsApps;C:\ghcup\bin;C:\Users\Lori\AppData\Roaming\npm;C:\Users\Lori\AppData\Local\Programs\Windsurf\bin;
+         PATH=D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64;;C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x86;;D:\New folder\Common7\tools;D:\New folder\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;D:\New folder\MSBuild\Current\Bin\amd64;C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;D:\New folder\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\PROGRA~2\Aldec\ACTIVE~1.3\BIN;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Lori\AppData\Local\Programs\Python\Python312;C:\Users\Lori\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\apache-maven-4.0.0-beta-5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\Ruby31-x64\bin;C:\Users\Lori\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lori\AppData\Local\Microsoft\WindowsApps;C:\ghcup\bin;C:\Users\Lori\AppData\Roaming\npm;C:\Users\Lori\AppData\Local\Programs\Windsurf\bin;C:\Users\Lori\AppData\Local\GitHubDesktop\bin;
        Done executing task "SetEnv".
        Task "SetEnv"
          LIB=D:\New folder\VC\Tools\MSVC\14.41.34120\lib\x64;;D:\New folder\VC\Tools\MSVC\14.41.34120\atlmfc\lib\x64;;D:\New folder\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64;;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64;lib\um\x64;
@@ -1441,7 +1441,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          00000000000i[      ]   SB16 support: yes
          00000000000i[      ]   USB support: yes
          00000000000i[      ]   VGA extension support: vbe cirrus voodoo
-         00000000000i[MEM0  ] allocated memory at 04319020. after alignment, vector=0431A000
+         00000000000i[MEM0  ] allocated memory at 04DC8020. after alignment, vector=04DC9000
          00000000000i[MEM0  ] 512.00MB
          00000000000i[MEM0  ] mem block size = 0x00100000, blocks=512
          00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('.\utils\Bochs-2.6.8\BIOS-bochs-latest')
@@ -1453,7 +1453,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
          00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
          00000000000i[CMOS  ] Using local time for initial clock
-         00000000000i[CMOS  ] Setting initial clock to: Sat Nov 22 21:50:55 2025 (time0=1763841055)
+         00000000000i[CMOS  ] Setting initial clock to: Mon Nov 24 19:59:53 2025 (time0=1764007193)
          00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
          00000000000i[DMA   ] channel 4 used by cascade
          00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -1603,37 +1603,37 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          00001503768i[BXVGA ] VBE known Display Interface b0c0
          00001503800i[BXVGA ] VBE known Display Interface b0c5
          00001506725i[VBIOS ] VBE Bios $Id: vbe.c,v 1.65 2014/07/08 18:02:25 vruppert Exp $
-         03714338993i[BIOS  ] Booting from 0000:7c00
-         03724463133i[CPU0  ] [3724463133] Stopped on MAGIC BREAKPOINT
-         03724470942i[CPU0  ] [3724470942] Stopped on MAGIC BREAKPOINT
-         03724484972i[SER   ] com1: FIFO enabled
-         50141124931i[CPU0  ] CPU is in long mode (halted)
-         50141124931i[CPU0  ] CS.mode = 64 bit
-         50141124931i[CPU0  ] SS.mode = 64 bit
-         50141124931i[CPU0  ] EFER   = 0x00000500
-         50141124931i[CPU0  ] | RAX=0000000000000020  RBX=0000000000400000
-         50141124931i[CPU0  ] | RCX=0000000000000000  RDX=0000000000000020
-         50141124931i[CPU0  ] | RSP=00000000001fffd0  RBP=0000000000000000
-         50141124931i[CPU0  ] | RSI=0000000000020000  RDI=000000000020b000
-         50141124931i[CPU0  ] |  R8=00000000001fff28   R9=000000000020405a
-         50141124931i[CPU0  ] | R10=0000000000200000  R11=000000000000033d
-         50141124931i[CPU0  ] | R12=0000000000000000  R13=0000000000000000
-         50141124931i[CPU0  ] | R14=0000000000000000  R15=0000000000000000
-         50141124931i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf ZF af PF cf
-         50141124931i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
-         50141124931i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 0
-         50141124931i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         50141124931i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         50141124931i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         50141124931i[CPU0  ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         50141124931i[CPU0  ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         50141124931i[CPU0  ] |  MSR_FS_BASE:0000000000000000
-         50141124931i[CPU0  ] |  MSR_GS_BASE:0000000000000000
-         50141124931i[CPU0  ] | RIP=0000000000203aa1 (0000000000203aa1)
-         50141124931i[CPU0  ] | CR0=0xe0000011 CR2=0x0000000000000000
-         50141124931i[CPU0  ] | CR3=0x00206000 CR4=0x00000620
-         50141124931i[CMOS  ] Last time is 1763853590 (Sun Nov 23 01:19:50 2025)
-         50141124931i[SIM   ] quit_sim called with exit code 0
+         04937606503i[BIOS  ] Booting from 0000:7c00
+         04947730643i[CPU0  ] [4947730643] Stopped on MAGIC BREAKPOINT
+         04947738452i[CPU0  ] [4947738452] Stopped on MAGIC BREAKPOINT
+         04947752482i[SER   ] com1: FIFO enabled
+         20292671318i[CPU0  ] CPU is in long mode (halted)
+         20292671318i[CPU0  ] CS.mode = 64 bit
+         20292671318i[CPU0  ] SS.mode = 64 bit
+         20292671318i[CPU0  ] EFER   = 0x00000500
+         20292671318i[CPU0  ] | RAX=0000000000000020  RBX=0000000000400000
+         20292671318i[CPU0  ] | RCX=0000000000000000  RDX=0000000000000020
+         20292671318i[CPU0  ] | RSP=00000000001fffd0  RBP=0000000000000000
+         20292671318i[CPU0  ] | RSI=0000000000020000  RDI=000000000020c000
+         20292671318i[CPU0  ] |  R8=00000000001fff28   R9=000000000020505a
+         20292671318i[CPU0  ] | R10=00000000001ffea8  R11=00000000000000bd
+         20292671318i[CPU0  ] | R12=0000000000000000  R13=0000000000000000
+         20292671318i[CPU0  ] | R14=0000000000000000  R15=0000000000000000
+         20292671318i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf ZF af PF cf
+         20292671318i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
+         20292671318i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 0
+         20292671318i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         20292671318i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         20292671318i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         20292671318i[CPU0  ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         20292671318i[CPU0  ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         20292671318i[CPU0  ] |  MSR_FS_BASE:0000000000000000
+         20292671318i[CPU0  ] |  MSR_GS_BASE:0000000000000000
+         20292671318i[CPU0  ] | RIP=0000000000203aa1 (0000000000203aa1)
+         20292671318i[CPU0  ] | CR0=0xe0000011 CR2=0x0000000000000000
+         20292671318i[CPU0  ] | CR3=0x00207000 CR4=0x00000620
+         20292671318i[CMOS  ] Last time is 1764012266 (Mon Nov 24 21:24:26 2025)
+         20292671318i[SIM   ] quit_sim called with exit code 0
        Done executing task "Exec".
      1>Done building target "PostBuildEvent" in project "RunBochs.vcxproj".
      1>Target "_BuildLinkAction" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildLink" depends on it):
@@ -1700,4 +1700,4 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:23.59
+Time Elapsed 00:00:11.16

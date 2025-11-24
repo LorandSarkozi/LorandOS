@@ -2,6 +2,7 @@
 #define _PIT_H_
 
 #include "main.h"
+#include "rtc.h"
 
 // PIT ports
 #define PIT_CHANNEL0    0x40    
@@ -36,5 +37,6 @@
 // Function declarations
 void PIT_Init(DWORD frequency);
 QWORD PIT_GetTicks(void);
+void PIT_GetCurrentTime(PDATETIME dt);
 
 #endif 
