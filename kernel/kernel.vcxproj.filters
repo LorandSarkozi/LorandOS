@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="cli.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -50,6 +53,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="ata_commands.h">
       <Filter>Header Files</Filter>
     </ClInclude>

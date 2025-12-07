@@ -4,6 +4,7 @@
 #include "pit.h"
 #include "rtc.h"
 #include "logging.h"
+#include "ata.h"
 
 CLI_STATE gCliState;
 
@@ -46,6 +47,7 @@ void CLI_Init(void)
     ClearScreen();
     Log("MiniOS CLI v1.0");
     Log("Type 'clear' to clear screen, 'time' for system time, 'edit' for editor");
+    Log("Type 'printmbr' to display disk sector 0 in hex format");
     CLI_PrintPrompt();
 }
 
@@ -230,9 +232,25 @@ void CLI_ProcessCommand(void)
     {
         CLI_EnterEditMode();
     }
+    else if (strncmp_equal(gCliState.commandBuffer, "printmbr", 8))
+    {
+        CLI_Command_PrintMBR();
+    }
     else
     {
-        Log("Unknown command. Available: clear, cls, time, edit");
+        extern PSCREEN gVideo;
+        const char* msg = "Unknown command. Available: clear, cls, time, edit, printmbr";
+        DWORD pos = ((gCliState.cursorPosition / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+        
+        while (*msg && pos < MAX_OFFSET)
+        {
+            gVideo[pos].c = *msg;
+            gVideo[pos].color = 0x0C;
+            msg++;
+            pos++;
+        }
+        
+        gCliState.cursorPosition = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
     }
 }
 
@@ -271,7 +289,7 @@ void CLI_Command_Time(void)
     char buffer[64];
     QWORD ticks = PIT_GetTicks();
     DATETIME dt;
-    DWORD pos = gCliState.cursorPosition;
+    DWORD pos = ((gCliState.cursorPosition / MAX_COLUMNS) + 1) * MAX_COLUMNS;
 
     memset(buffer, 0, sizeof(buffer));
 
@@ -491,4 +509,194 @@ void CLI_RefreshEditScreen(void)
     
     DWORD cursorPos = gCliState.editCursorRow * MAX_COLUMNS + gCliState.editCursorCol;
     CursorPosition(cursorPos);
+}
+
+// Helper to print a hex byte
+static void PrintHexByte(DWORD* pos, BYTE value)
+{
+    extern PSCREEN gVideo;
+    const char hex_chars[] = "0123456789ABCDEF";
+    
+    gVideo[*pos].c = hex_chars[(value >> 4) & 0x0F];
+    gVideo[*pos].color = 0x0B;
+    (*pos)++;
+    gVideo[*pos].c = hex_chars[value & 0x0F];
+    gVideo[*pos].color = 0x0B;
+    (*pos)++;
+}
+
+// Helper to print offset (8 hex digits)
+static void PrintOffset(DWORD* pos, DWORD offset)
+{
+    extern PSCREEN gVideo;
+    const char hex_chars[] = "0123456789ABCDEF";
+    
+    for (int i = 7; i >= 0; i--)
+    {
+        gVideo[*pos].c = hex_chars[(offset >> (i * 4)) & 0x0F];
+        gVideo[*pos].color = 0x0E;
+        (*pos)++;
+    }
+}
+
+void CLI_Command_PrintMBR(void)
+{
+    extern PSCREEN gVideo;
+    BYTE sector_buffer[512];
+    DWORD pos = ((gCliState.cursorPosition / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    char msg[64];
+    
+    // Check how many devices we have
+    DWORD device_count = ATA_GetDeviceCount();
+    if (device_count == 0)
+    {
+        const char* error_msg = "No ATA devices found! Check Bochs config.";
+        while (*error_msg && pos < MAX_OFFSET)
+        {
+            gVideo[pos].c = *error_msg;
+            gVideo[pos].color = 0x0C;
+            error_msg++;
+            pos++;
+        }
+        gCliState.cursorPosition = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+        CursorPosition(gCliState.cursorPosition);
+        return;
+    }
+    
+    cl_snprintf(msg, sizeof(msg), "Found %d ATA device(s). Reading from first device...", device_count);
+    DWORD i = 0;
+    while (msg[i] && pos < MAX_OFFSET)
+    {
+        gVideo[pos].c = msg[i];
+        gVideo[pos].color = 0x0E;
+        i++;
+        pos++;
+    }
+    pos = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    
+    // Get first ATA device
+    PATA_DEVICE device = ATA_GetDevice(0);
+    
+    if (!device)
+    {
+        const char* error_msg = "Failed to get ATA device!";
+        while (*error_msg && pos < MAX_OFFSET)
+        {
+            gVideo[pos].c = *error_msg;
+            gVideo[pos].color = 0x0C;
+            error_msg++;
+            pos++;
+        }
+        gCliState.cursorPosition = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+        CursorPosition(gCliState.cursorPosition);
+        return;
+    }
+    
+    // Read sector 0 (MBR)
+    const char* reading_msg = "Reading sector 0...";
+    while (*reading_msg && pos < MAX_OFFSET)
+    {
+        gVideo[pos].c = *reading_msg;
+        gVideo[pos].color = 0x0E;
+        reading_msg++;
+        pos++;
+    }
+    pos = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    
+    if (!ATA_ReadSectorsPIO(device, 0, 1, sector_buffer))
+    {
+        const char* error_msg = "Failed to read sector 0!";
+        while (*error_msg && pos < MAX_OFFSET)
+        {
+            gVideo[pos].c = *error_msg;
+            gVideo[pos].color = 0x0C;
+            error_msg++;
+            pos++;
+        }
+        gCliState.cursorPosition = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+        CursorPosition(gCliState.cursorPosition);
+        return;
+    }
+    
+    const char* success_msg = "Read successful! Displaying MBR:";
+    while (*success_msg && pos < MAX_OFFSET)
+    {
+        gVideo[pos].c = *success_msg;
+        gVideo[pos].color = 0x0A;
+        success_msg++;
+        pos++;
+    }
+    pos = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    
+    // Print header
+    const char* header = "Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  Decoded text";
+    while (*header && pos < MAX_OFFSET)
+    {
+        gVideo[pos].c = *header;
+        gVideo[pos].color = 0x0F;
+        header++;
+        pos++;
+    }
+    
+    pos = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    
+    // Print each line (16 bytes per line, 32 lines for 512 bytes)
+    for (DWORD line = 0; line < 32 && pos < MAX_OFFSET - MAX_COLUMNS; line++)
+    {
+        DWORD offset = line * 16;
+        
+        // Print offset
+        PrintOffset(&pos, offset);
+        
+        // Space after offset
+        gVideo[pos].c = ' ';
+        gVideo[pos].color = 0x0F;
+        pos++;
+        gVideo[pos].c = ' ';
+        gVideo[pos].color = 0x0F;
+        pos++;
+        
+        // Print 16 hex bytes
+        for (DWORD i = 0; i < 16; i++)
+        {
+            PrintHexByte(&pos, sector_buffer[offset + i]);
+            
+            // Space after each byte
+            gVideo[pos].c = ' ';
+            gVideo[pos].color = 0x0F;
+            pos++;
+        }
+        
+        // Space before decoded text
+        gVideo[pos].c = ' ';
+        gVideo[pos].color = 0x0F;
+        pos++;
+        
+        // Print decoded text (ASCII representation)
+        for (DWORD i = 0; i < 16; i++)
+        {
+            BYTE byte_val = sector_buffer[offset + i];
+            char c;
+            
+            // Print printable ASCII or '.' for non-printable
+            if (byte_val >= 0x20 && byte_val <= 0x7E)
+            {
+                c = (char)byte_val;
+            }
+            else
+            {
+                c = '.';
+            }
+            
+            gVideo[pos].c = c;
+            gVideo[pos].color = 0x0A;
+            pos++;
+        }
+        
+        // Move to next line
+        pos = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    }
+    
+    gCliState.cursorPosition = pos;
+    CursorPosition(pos);
 }

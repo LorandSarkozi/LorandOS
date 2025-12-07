@@ -24,6 +24,7 @@ void ClearScreen();
 void PutChar(char C, int Pos);
 void PutString(char* String, int Pos);
 void PutStringLine(char* String, int Line);
+void CursorPosition(int pos);
 
 // Expose video buffer for keyboard driver
 extern PSCREEN gVideo;

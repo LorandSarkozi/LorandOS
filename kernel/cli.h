@@ -60,6 +60,7 @@ void CLI_RefreshEditScreen(void);
 // Command handlers
 void CLI_Command_Clear(void);
 void CLI_Command_Time(void);
+void CLI_Command_PrintMBR(void);
 
 // Exposed for keyboard handler
 extern CLI_STATE gCliState;

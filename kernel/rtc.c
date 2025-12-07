@@ -61,5 +61,25 @@ void RTC_GetDateTime(PDATETIME dt)
         attempts++;
     } while (lastSecond != dt->second && attempts < 3);
     
-    dt->year += 2000;
+    // Calculate full year: century * 100 + year
+    // If century is 0 or invalid, assume 2000 + year
+    BYTE centuryReg = RTC_ReadRegister(0x32);
+    BYTE century = centuryReg;
+    
+    // Check if we need to convert century from BCD
+    statusB = RTC_ReadRegister(CMOS_REG_STATUS_B);
+    if (!(statusB & CMOS_STATUS_B_BINARY))
+    {
+        century = RTC_BCDToBinary(centuryReg);
+    }
+    
+    if (century >= 19 && century <= 21)
+    {
+        dt->year = century * 100 + dt->year;
+    }
+    else
+    {
+        // Fallback: assume year is in 2000s
+        dt->year += 2000;
+    }
 }

@@ -5,6 +5,7 @@
 #include "pit.h"
 #include "keyboard.h"
 #include "cli.h"
+#include "ata.h"
 
 extern void TriggerPF(void);
 extern void TriggerUD2(void);
@@ -37,6 +38,9 @@ void KernelMain()
     
     Log("Enabling interrupts");
     __sti();
+    
+    Log("Initializing ATA subsystem");
+    ATA_Init();
     
     Log("Initializing CLI");
     CLI_Init();

@@ -131,6 +131,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ata.c" />
     <ClCompile Include="cli.c" />
     <ClCompile Include="irq_dispatch.c" />
     <ClCompile Include="isr_dispatch.cpp" />
@@ -144,6 +145,7 @@
     <ClCompile Include="string.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ata.h" />
     <ClInclude Include="ata_commands.h" />
     <ClInclude Include="bochs_map.h" />
     <ClInclude Include="cli.h" />

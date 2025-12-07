@@ -35,8 +35,11 @@ void PIT_Init(DWORD frequency)
     __outbyte(PIT_CHANNEL0, high);
 
     PIC_ClearMask(IRQ_TIMER);
+    
+    // Read initial time from RTC
     RTC_GetDateTime(&gBootTime);
     
+    // Apply timezone offset - hours
     int adjustedHour = (int)gBootTime.hour + TIMEZONE_OFFSET_HOURS;
     if (adjustedHour >= 24)
     {
@@ -52,7 +55,7 @@ void PIT_Init(DWORD frequency)
     {
         gBootTime.hour = adjustedHour;
     }
-
+    
     int adjustedMinute = (int)gBootTime.minute + TIMEZONE_OFFSET_MINUTES;
     if (adjustedMinute >= 60)
     {
@@ -100,29 +103,37 @@ void PIT_GetCurrentTime(PDATETIME dt)
     
     QWORD ticks = gTickCount;
     QWORD elapsedSeconds = ticks / gPitFrequency;
-   
+    
+    // Convert boot time to total seconds
     QWORD bootTotalSeconds = (QWORD)gBootTime.hour * 3600 + 
                              (QWORD)gBootTime.minute * 60 + 
                              (QWORD)gBootTime.second;
     
+    // Add elapsed seconds to boot time
     QWORD currentTotalSeconds = bootTotalSeconds + elapsedSeconds;
     
+    // Calculate elapsed days
     QWORD elapsedDays = currentTotalSeconds / 86400;
-    currentTotalSeconds %= 86400;  
-   
+    currentTotalSeconds %= 86400;  // Remaining seconds in current day
+    
+    // Convert back to hours, minutes, seconds
     DWORD hours = (DWORD)(currentTotalSeconds / 3600);
     currentTotalSeconds %= 3600;
     DWORD minutes = (DWORD)(currentTotalSeconds / 60);
     DWORD seconds = (DWORD)(currentTotalSeconds % 60);
-
+    
+    // Calculate new date
     DWORD day = gBootTime.day + (DWORD)elapsedDays;
     DWORD month = gBootTime.month;
     DWORD year = gBootTime.year;
-
+    
+    // Days in each month
     BYTE daysInMonth[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-
+    
+    // Handle month/year rollover
     while (day > daysInMonth[month - 1])
     {
+        // Check for leap year
         if (month == 2 && year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))
         {
             if (day > 29)

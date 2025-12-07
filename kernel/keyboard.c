@@ -2,6 +2,8 @@
 #include "pic.h"
 #include "screen.h"
 #include "cli.h"
+#include "string.h"
+#include "logging.h"
 #include <intrin.h>
 
 static BYTE gShiftPressed = 0;
@@ -95,10 +97,15 @@ void Keyboard_Handler(void)
         // Apply CapsLock and Shift for letters
         if (c >= 'a' && c <= 'z')
         {
-            BYTE shouldUppercase = (gShiftPressed && !gCapsLockOn) || (!gShiftPressed && gCapsLockOn);
-            if (shouldUppercase)
+            // Convert to uppercase if shift or caps is pressed (but not both)
+            // Lowercase when: both OFF or both ON
+            // Uppercase when: exactly one is ON
+            if (gShiftPressed || gCapsLockOn)
             {
-                c = c - 'a' + 'A';
+                if (!(gShiftPressed && gCapsLockOn))
+                {
+                    c = c - 'a' + 'A';
+                }
             }
         }
         else if (gShiftPressed)
@@ -140,10 +147,17 @@ void Keyboard_Handler(void)
 
 void Keyboard_Init(void)
 {
+    // Clear any pending keyboard data
     while (__inbyte(KBD_STATUS_PORT) & KBD_STATUS_OUT_FULL)
     {
         __inbyte(KBD_DATA_PORT);
     }
+    
+    // Explicitly initialize all keyboard state to ensure lowercase at start
+    gShiftPressed = 0;
+    gCapsLockOn = 0;
+    gExtendedScancode = 0;
+    gLastKey = KEY_UNKNOWN;
     
     PIC_ClearMask(IRQ_KEYBOARD);
 }
