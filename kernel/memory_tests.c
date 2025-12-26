@@ -31,8 +31,33 @@ static void PrintToScreen(const char* msg)
 
 BOOLEAN test_page_allocator(void)
 {
-    PrintToScreen("Page allocator not implemented");
-    return FALSE;
+    PrintToScreen("Allocating page 1...");
+    PVOID page1 = page_alloc(&gPageAllocator, (QWORD)-1);
+    if (!page1)
+    {
+        PrintToScreen("ERROR: Failed to allocate page 1");
+        return FALSE;
+    }
+    PrintToScreen("Page 1 allocated");
+
+    PrintToScreen("Getting physical frame...");
+    QWORD frame1 = page_get_physical_frame(&gPageAllocator, page1);
+    if (frame1 == (QWORD)-1)
+    {
+        PrintToScreen("ERROR: Failed to get frame");
+        return FALSE;
+    }
+    PrintToScreen("Frame retrieved");
+
+    PrintToScreen("Freeing page...");
+    if (!page_free(&gPageAllocator, page1, TRUE))
+    {
+        PrintToScreen("ERROR: Failed to free page");
+        return FALSE;
+    }
+
+    PrintToScreen("Page test PASSED");
+    return TRUE;
 }
 
 BOOLEAN test_heap_allocator(void)

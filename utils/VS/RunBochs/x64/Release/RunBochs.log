@@ -785,7 +785,7 @@
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
-Build started 26/12/2025 15:53:52.
+Build started 26/12/2025 15:57:54.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" on node 2 (Rebuild target(s)).
      1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
@@ -813,7 +813,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          VSTEL_SolutionSessionID={042DC9F7-158A-406D-BB6D-754B52BF07A8}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=1926484592
+         VSTEL_CurrentSolutionBuildID=46535722
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={d7ab6db1-8bb8-4481-8947-49a5c1a1defb}
@@ -1441,7 +1441,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          00000000000i[      ]   SB16 support: yes
          00000000000i[      ]   USB support: yes
          00000000000i[      ]   VGA extension support: vbe cirrus voodoo
-         00000000000i[MEM0  ] allocated memory at 04064020. after alignment, vector=04065000
+         00000000000i[MEM0  ] allocated memory at 03FAD020. after alignment, vector=03FAE000
          00000000000i[MEM0  ] 512.00MB
          00000000000i[MEM0  ] mem block size = 0x00100000, blocks=512
          00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('.\utils\Bochs-2.6.8\BIOS-bochs-latest')
@@ -1453,7 +1453,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
          00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
          00000000000i[CMOS  ] Using local time for initial clock
-         00000000000i[CMOS  ] Setting initial clock to: Fri Dec 26 15:53:53 2025 (time0=1766757233)
+         00000000000i[CMOS  ] Setting initial clock to: Fri Dec 26 15:57:54 2025 (time0=1766757474)
          00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
          00000000000i[DMA   ] channel 4 used by cascade
          00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -1568,141 +1568,47 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          00000321256i[BIOS  ] Shutdown flag 0
          00000321848i[BIOS  ] ram_size=0x20000000
          00000322291i[BIOS  ] ram_end=512MB
-         00000334371i[BIOS  ] Found 1 cpu(s)
-         00000348575i[BIOS  ] bios_table_addr: 0x000fa498 end=0x000fcc00
-         00000676370i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
-         00001004299i[P2ISA ] PCI IRQ routing: PIRQA# set to 0x0b
-         00001004318i[P2ISA ] PCI IRQ routing: PIRQB# set to 0x09
-         00001004337i[P2ISA ] PCI IRQ routing: PIRQC# set to 0x0b
-         00001004356i[P2ISA ] PCI IRQ routing: PIRQD# set to 0x09
-         00001004366i[P2ISA ] write: ELCR2 = 0x0a
-         00001005136i[BIOS  ] PIIX3/PIIX4 init: elcr=00 0a
-         00001012859i[BIOS  ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
-         00001015138i[BIOS  ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
-         00001017256i[BIOS  ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
-         00001017481i[PIDE  ] new BM-DMA address: 0xc000
-         00001018097i[BIOS  ] region 4: 0x0000c000
-         00001020108i[BIOS  ] PCI: bus=0 devfn=0x0a: vendor_id=0x8086 device_id=0x7020 class=0x0c03
-         00001020308i[UHCI  ] new base address: 0xc020
-         00001020924i[BIOS  ] region 4: 0x0000c020
-         00001021049i[UHCI  ] new irq line = 9
-         00001022944i[BIOS  ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
-         00001023176i[ACPI  ] new irq line = 11
-         00001023188i[ACPI  ] new irq line = 9
-         00001023213i[ACPI  ] new PM base address: 0xb000
-         00001023227i[ACPI  ] new SM base address: 0xb100
-         00001023255i[PCI   ] setting SMRAM control register to 0x4a
-         00001187348i[CPU0  ] Enter to System Management Mode
-         00001187348i[CPU0  ] enter_system_management_mode: temporary disable VMX while in SMM mode
-         00001187358i[CPU0  ] RSM: Resuming from System Management Mode
-         00001351379i[PCI   ] setting SMRAM control register to 0x0a
-         00001366286i[BIOS  ] MP table addr=0x000fa570 MPC table addr=0x000fa4a0 size=0xc8
-         00001368108i[BIOS  ] SMBIOS table addr=0x000fa580
-         00001370298i[BIOS  ] ACPI tables: RSDP addr=0x000fa6a0 ACPI DATA addr=0x1fff0000 size=0xf72
-         00001373532i[BIOS  ] Firmware waking vector 0x1fff00cc
-         00001375327i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
-         00001376050i[BIOS  ] bios_table_cur_addr: 0x000fa6c4
-         00001503667i[VBIOS ] VGABios $Id: vgabios.c,v 1.76 2013/02/10 08:07:03 vruppert Exp $
+         00000334401i[BIOS  ] Found 1 cpu(s)
+         00000348605i[BIOS  ] bios_table_addr: 0x000fa498 end=0x000fcc00
+         00000676400i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
+         00001004329i[P2ISA ] PCI IRQ routing: PIRQA# set to 0x0b
+         00001004348i[P2ISA ] PCI IRQ routing: PIRQB# set to 0x09
+         00001004367i[P2ISA ] PCI IRQ routing: PIRQC# set to 0x0b
+         00001004386i[P2ISA ] PCI IRQ routing: PIRQD# set to 0x09
+         00001004396i[P2ISA ] write: ELCR2 = 0x0a
+         00001005166i[BIOS  ] PIIX3/PIIX4 init: elcr=00 0a
+         00001012889i[BIOS  ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
+         00001015168i[BIOS  ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
+         00001017286i[BIOS  ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
+         00001017511i[PIDE  ] new BM-DMA address: 0xc000
+         00001018127i[BIOS  ] region 4: 0x0000c000
+         00001020138i[BIOS  ] PCI: bus=0 devfn=0x0a: vendor_id=0x8086 device_id=0x7020 class=0x0c03
+         00001020338i[UHCI  ] new base address: 0xc020
+         00001020954i[BIOS  ] region 4: 0x0000c020
+         00001021079i[UHCI  ] new irq line = 9
+         00001022974i[BIOS  ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
+         00001023206i[ACPI  ] new irq line = 11
+         00001023218i[ACPI  ] new irq line = 9
+         00001023243i[ACPI  ] new PM base address: 0xb000
+         00001023257i[ACPI  ] new SM base address: 0xb100
+         00001023285i[PCI   ] setting SMRAM control register to 0x4a
+         00001187378i[CPU0  ] Enter to System Management Mode
+         00001187378i[CPU0  ] enter_system_management_mode: temporary disable VMX while in SMM mode
+         00001187388i[CPU0  ] RSM: Resuming from System Management Mode
+         00001351409i[PCI   ] setting SMRAM control register to 0x0a
+         00001366316i[BIOS  ] MP table addr=0x000fa570 MPC table addr=0x000fa4a0 size=0xc8
+         00001368138i[BIOS  ] SMBIOS table addr=0x000fa580
+         00001370328i[BIOS  ] ACPI tables: RSDP addr=0x000fa6a0 ACPI DATA addr=0x1fff0000 size=0xf72
+         00001373562i[BIOS  ] Firmware waking vector 0x1fff00cc
+         00001375357i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
+         00001376080i[BIOS  ] bios_table_cur_addr: 0x000fa6c4
+         00001503697i[VBIOS ] VGABios $Id: vgabios.c,v 1.76 2013/02/10 08:07:03 vruppert Exp $
          
-         00001503738i[BXVGA ] VBE known Display Interface b0c0
-         00001503770i[BXVGA ] VBE known Display Interface b0c5
-         00001506695i[VBIOS ] VBE Bios $Id: vbe.c,v 1.65 2014/07/08 18:02:25 vruppert Exp $
-         00001851021i[BIOS  ] ata0-0: PCHS=10/16/63 translation=none LCHS=10/16/63
-         00005727896i[BIOS  ] IDE time out
-         06986853838i[BIOS  ] Booting from 0000:7c00
-         06996977978i[CPU0  ] [6996977978] Stopped on MAGIC BREAKPOINT
-         06996999814i[SER   ] com1: FIFO enabled
-         78030743825i[CPU0  ] CPU is in long mode (halted)
-         78030743825i[CPU0  ] CS.mode = 64 bit
-         78030743825i[CPU0  ] SS.mode = 64 bit
-         78030743825i[CPU0  ] EFER   = 0x00000500
-         78030743825i[CPU0  ] | RAX=0000000000000020  RBX=0000000000400000
-         78030743825i[CPU0  ] | RCX=0000000000000000  RDX=0000000000000020
-         78030743825i[CPU0  ] | RSP=00000000001fffd0  RBP=0000000000000000
-         78030743825i[CPU0  ] | RSI=0000000000020000  RDI=000000000020f000
-         78030743825i[CPU0  ] |  R8=00000000001fff28   R9=00000000002082d6
-         78030743825i[CPU0  ] | R10=0000000000000003  R11=0000000000000040
-         78030743825i[CPU0  ] | R12=0000000000000000  R13=0000000000000000
-         78030743825i[CPU0  ] | R14=0000000000000000  R15=0000000000000000
-         78030743825i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf ZF af PF cf
-         78030743825i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
-         78030743825i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 0
-         78030743825i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         78030743825i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         78030743825i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         78030743825i[CPU0  ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         78030743825i[CPU0  ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
-         78030743825i[CPU0  ] |  MSR_FS_BASE:0000000000000000
-         78030743825i[CPU0  ] |  MSR_GS_BASE:0000000000000000
-         78030743825i[CPU0  ] | RIP=00000000002058b6 (00000000002058b6)
-         78030743825i[CPU0  ] | CR0=0xe0000011 CR2=0x0000000000000000
-         78030743825i[CPU0  ] | CR3=0x0020a000 CR4=0x00000620
-         78030743825i[CMOS  ] Last time is 1766776740 (Fri Dec 26 21:19:00 2025)
-         78030743825i[SIM   ] quit_sim called with exit code 0
-       Done executing task "Exec".
-     1>Done building target "PostBuildEvent" in project "RunBochs.vcxproj".
-     1>Target "_BuildLinkAction" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildLink" depends on it):
-     1>Done building target "_BuildLinkAction" in project "RunBochs.vcxproj".
-     1>Target "BuildLink" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
-     1>Done building target "BuildLink" in project "RunBochs.vcxproj".
-     1>Target "AfterBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
-     1>Done building target "AfterBuild" in project "RunBochs.vcxproj".
-       Target "_CheckForCompileOutputs" skipped. Previously built successfully.
-       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
-     1>Target "_CleanGetCurrentAndPriorFileWrites" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "IncrementalClean" depends on it):
-       Task "ReadLinesFromFile"
-       Done executing task "ReadLinesFromFile".
-       Task "ConvertToAbsolutePath"
-       Done executing task "ConvertToAbsolutePath".
-       Task "FindUnderPath"
-         Comparison path is "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs".
-       Done executing task "FindUnderPath".
-       Task "FindUnderPath"
-         Comparison path is "C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\".
-       Done executing task "FindUnderPath".
-       Task "FindUnderPath"
-         Comparison path is "x64\Release\".
-       Done executing task "FindUnderPath".
-       Task "RemoveDuplicates"
-       Done executing task "RemoveDuplicates".
-     1>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "RunBochs.vcxproj".
-     1>Target "IncrementalClean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
-       Task "FindUnderPath"
-         Comparison path is "C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\".
-       Done executing task "FindUnderPath".
-       Task "FindUnderPath"
-         Comparison path is "x64\Release\".
-       Done executing task "FindUnderPath".
-       Task "Delete"
-       Done executing task "Delete".
-       Task "RemoveDuplicates"
-       Done executing task "RemoveDuplicates".
-       Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as (''!='').
-     1>Done building target "IncrementalClean" in project "RunBochs.vcxproj".
-     1>Target "TlogCleanup" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
-       Using "CleanupStaleTlogItems" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
-       Task "CleanupStaleTlogItems"
-       Done executing task "CleanupStaleTlogItems".
-     1>Done building target "TlogCleanup" in project "RunBochs.vcxproj".
-     1>Target "FinalizeBuildStatus" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
-       Task "Delete"
-         Deleting file "x64\Release\RunBochs.tlog\unsuccessfulbuild".
-       Done executing task "Delete".
-       Task "Touch"
-         Touching "x64\Release\RunBochs.tlog\RunBochs.lastbuildstate".
-       Done executing task "Touch".
-     1>Done building target "FinalizeBuildStatus" in project "RunBochs.vcxproj".
-     1>Target "Build" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "Build" in project "RunBochs.vcxproj".
-     1>Target "AfterRebuild" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "AfterRebuild" in project "RunBochs.vcxproj".
-       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "Rebuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (entry point):
-     1>Done building target "Rebuild" in project "RunBochs.vcxproj".
-     1>Done Building Project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (Rebuild target(s)).
-
-Build succeeded.
-    0 Warning(s)
-    0 Error(s)
-
-Time Elapsed 00:00:30.14
+         00001503768i[BXVGA ] VBE known Display Interface b0c0
+         00001503800i[BXVGA ] VBE known Display Interface b0c5
+         00001506725i[VBIOS ] VBE Bios $Id: vbe.c,v 1.65 2014/07/08 18:02:25 vruppert Exp $
+         00001851051i[BIOS  ] ata0-0: PCHS=10/16/63 translation=none LCHS=10/16/63
+         00005727903i[BIOS  ] IDE time out
+         07554652335i[BIOS  ] Booting from 0000:7c00
+         07564776475i[CPU0  ] [7564776475] Stopped on MAGIC BREAKPOINT
+         07564798311i[SER   ] com1: FIFO enabled

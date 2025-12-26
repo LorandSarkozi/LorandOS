@@ -6,7 +6,7 @@
 FRAME_ALLOCATOR gFrameAllocator;
 PAGE_ALLOCATOR gPageAllocator;
 
-static BYTE gMemoryPool[8 * 1024];
+static BYTE gMemoryPool[16 * 1024];
 
 void Memory_Init(void)
 {
@@ -19,6 +19,14 @@ void Memory_Init(void)
         return;
     }
     Log("Frame allocator OK");
+    
+    Log("Page allocator START");
+    if (!page_init(&gPageAllocator, (PVOID)0x80000000ULL, &gFrameAllocator))
+    {
+        Log("Page allocator FAILED");
+        return;
+    }
+    Log("Page allocator OK");
     
     Log("Test framework START");
     test_framework_init();
