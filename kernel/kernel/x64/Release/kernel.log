@@ -791,7 +791,7 @@
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
-Build started 26/12/2025 15:57:50.
+Build started 26/12/2025 16:03:16.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" on node 2 (Rebuild target(s)).
      1>Project file contains ToolsVersion="14.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
@@ -821,7 +821,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          VSTEL_SolutionSessionID={042DC9F7-158A-406D-BB6D-754B52BF07A8}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=46535722
+         VSTEL_CurrentSolutionBuildID=3299832635
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={7703C7CC-77F7-4D03-9AD0-482B24B1CF0B}
@@ -1351,14 +1351,14 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
        Task "CL"
          Forcing recompile of all source files due to missing PDB "kernel\x64\Release\vc143.pdb".
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2856
-           SARIF_OUTPUT_PIPE=3048
+           VS_UNICODE_OUTPUT=2688
+           SARIF_OUTPUT_PIPE=3064
          D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TC /FC /errorReport:prompt /noover ata.c cli.c frame_allocator.c heap_allocator.c irq_dispatch.c keyboard.c logging.c main.c memory_manager.c memory_tests.c page_allocator.c pic.c pit.c rtc.c screen.c string.c test_framework.c
          Tracking command:
-         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\ATA.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\CLI.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\FRAME_ALLOCATOR.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\HEAP_ALLOCATOR.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\IRQ_DISPATCH.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KEYBOARD.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\LOGGING.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MAIN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MEMORY_MANAGER.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MEMORY_TESTS.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PAGE_ALLOCATOR.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIT.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\RTC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\SCREEN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\STRING.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\TEST_FRAMEWORK.C" /b MSBuildConsole_CancelEventb6e5debefc5f4c7892caff253194f56d  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TC /FC /errorReport:prompt /noover ata.c cli.c frame_allocator.c heap_allocator.c irq_dispatch.c keyboard.c logging.c main.c memory_manager.c memory_tests.c page_allocator.c pic.c pit.c rtc.c screen.c string.c test_framework.c
+         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\ATA.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\CLI.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\FRAME_ALLOCATOR.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\HEAP_ALLOCATOR.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\IRQ_DISPATCH.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KEYBOARD.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\LOGGING.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MAIN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MEMORY_MANAGER.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MEMORY_TESTS.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PAGE_ALLOCATOR.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIT.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\RTC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\SCREEN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\STRING.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\TEST_FRAMEWORK.C" /b MSBuildConsole_CancelEvent2bbc1714ac7441b59d399754e6efe584  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TC /FC /errorReport:prompt /noover ata.c cli.c frame_allocator.c heap_allocator.c irq_dispatch.c keyboard.c logging.c main.c memory_manager.c memory_tests.c page_allocator.c pic.c pit.c rtc.c screen.c string.c test_framework.c
          ata.c
          cli.c
-     1>C:\Users\Lori\Desktop\MiniOS\kernel\cli.c(862,9): warning C4090: 'function': different 'const' qualifiers
+     1>C:\Users\Lori\Desktop\MiniOS\kernel\cli.c(854,9): warning C4090: 'function': different 'const' qualifiers
          frame_allocator.c
          heap_allocator.c
          irq_dispatch.c
@@ -1389,11 +1389,11 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          Write Tracking Logs:
          	kernel\x64\Release\kernel.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2592
-           SARIF_OUTPUT_PIPE=2360
+           VS_UNICODE_OUTPUT=1380
+           SARIF_OUTPUT_PIPE=1108
          D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt /noover isr_dispatch.cpp
          Tracking command:
-         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\ISR_DISPATCH.CPP /b MSBuildConsole_CancelEvent2145a3a4184a44ac8854873f4ec46a69  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt /noover isr_dispatch.cpp
+         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\ISR_DISPATCH.CPP /b MSBuildConsole_CancelEvent42d704d8fee54709aae574cac64013f5  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt /noover isr_dispatch.cpp
          isr_dispatch.cpp
        Done executing task "CL".
      1>Done building target "ClCompile" in project "kernel.vcxproj".
@@ -1512,7 +1512,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
        Task "Link"
          All source files are not up-to-date: missing command TLog "C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog\link.command.1.tlog".
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2684
+           VS_UNICODE_OUTPUT=2812
          D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.exe" /NOLOGO /MANIFEST:NO /PDB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.pdb" /SUBSYSTEM:NATIVE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCGOUT:"kernel\x64\Release\kernel.iobj" /TLBID:1 /ENTRY:"ASMEntryPoint" /BASE:"0x200000" /DYNAMICBASE:NO /FIXED /NXCOMPAT:NO /IMPLIB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.lib" /MACHINE:X64 /SAFESEH:NO /FILEALIGN:0x1000 /ALIGN:0x1000 /ignore:4108 kernel\x64\Release\__init.obj
          kernel\x64\Release\ata.obj
          kernel\x64\Release\cli.obj
@@ -1533,7 +1533,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          kernel\x64\Release\string.obj
          kernel\x64\Release\test_framework.obj
          Tracking command:
-         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\ATA.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\CLI.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\FRAME_ALLOCATOR.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\HEAP_ALLOCATOR.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\IRQ_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\ISR_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\KEYBOARD.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\LOGGING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MAIN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MEMORY_MANAGER.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MEMORY_TESTS.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PAGE_ALLOCATOR.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIT.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\RTC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\SCREEN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\STRING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\TEST_FRAMEWORK.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\__INIT.OBJ" /b MSBuildConsole_CancelEvent7d0f327954a943e392b6296d359f42f6  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.exe" /NOLOGO /MANIFEST:NO /PDB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.pdb" /SUBSYSTEM:NATIVE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCGOUT:"kernel\x64\Release\kernel.iobj" /TLBID:1 /ENTRY:"ASMEntryPoint" /BASE:"0x200000" /DYNAMICBASE:NO /FIXED /NXCOMPAT:NO /IMPLIB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.lib" /MACHINE:X64 /SAFESEH:NO /FILEALIGN:0x1000 /ALIGN:0x1000 /ignore:4108 kernel\x64\Release\__init.obj
+         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\ATA.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\CLI.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\FRAME_ALLOCATOR.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\HEAP_ALLOCATOR.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\IRQ_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\ISR_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\KEYBOARD.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\LOGGING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MAIN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MEMORY_MANAGER.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MEMORY_TESTS.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PAGE_ALLOCATOR.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIT.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\RTC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\SCREEN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\STRING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\TEST_FRAMEWORK.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\__INIT.OBJ" /b MSBuildConsole_CancelEvent1144212f7d344cf58d815d78ab6e2950  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.exe" /NOLOGO /MANIFEST:NO /PDB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.pdb" /SUBSYSTEM:NATIVE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCGOUT:"kernel\x64\Release\kernel.iobj" /TLBID:1 /ENTRY:"ASMEntryPoint" /BASE:"0x200000" /DYNAMICBASE:NO /FIXED /NXCOMPAT:NO /IMPLIB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.lib" /MACHINE:X64 /SAFESEH:NO /FILEALIGN:0x1000 /ALIGN:0x1000 /ignore:4108 kernel\x64\Release\__init.obj
          kernel\x64\Release\ata.obj
          kernel\x64\Release\cli.obj
          kernel\x64\Release\frame_allocator.obj
@@ -1779,7 +1779,7 @@ Build succeeded.
 
        "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (Rebuild target) (1) ->
        (ClCompile target) -> 
-         C:\Users\Lori\Desktop\MiniOS\kernel\cli.c(862,9): warning C4090: 'function': different 'const' qualifiers
+         C:\Users\Lori\Desktop\MiniOS\kernel\cli.c(854,9): warning C4090: 'function': different 'const' qualifiers
          C:\Users\Lori\Desktop\MiniOS\kernel\rtc.c(51,42): warning C4244: 'function': conversion from 'WORD' to 'BYTE', possible loss of data
          C:\Users\Lori\Desktop\MiniOS\kernel\string.c(805,33): warning C4090: 'function': different 'const' qualifiers
 
@@ -1791,4 +1791,4 @@ Build succeeded.
     4 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.82
+Time Elapsed 00:00:02.12

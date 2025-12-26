@@ -53,17 +53,9 @@ void CLI_Init(void)
     Log("Type 'writembr' to write test data to disk sector 0");
     Log("Type 'test_list' to list tests, 'test_run <name>' to run a test, 'test_run_all' to run all tests");
     
-    Log("Init test framework...");
     test_framework_init();
-    Log("Test framework ready");
-    
-    Log("Init frame allocator...");
     Memory_Init();
-    Log("Frame allocator ready");
-    
-    Log("Register tests...");
     memory_tests_register();
-    Log("Tests registered");
     
     CLI_PrintPrompt();
 }

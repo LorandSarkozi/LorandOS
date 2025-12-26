@@ -31,30 +31,43 @@ static void PrintToScreen(const char* msg)
 
 BOOLEAN test_page_allocator(void)
 {
-    PrintToScreen("Allocating page 1...");
+    PrintToScreen("Test 1: Alloc 2 pages");
     PVOID page1 = page_alloc(&gPageAllocator, (QWORD)-1);
-    if (!page1)
+    PVOID page2 = page_alloc(&gPageAllocator, (QWORD)-1);
+    
+    if (!page1 || !page2)
     {
-        PrintToScreen("ERROR: Failed to allocate page 1");
+        PrintToScreen("ERROR: page alloc failed");
         return FALSE;
     }
-    PrintToScreen("Page 1 allocated");
+    
+    if (page1 == page2)
+    {
+        PrintToScreen("ERROR: same page twice");
+        return FALSE;
+    }
+    PrintToScreen("OK: Got different pages");
 
-    PrintToScreen("Getting physical frame...");
+    PrintToScreen("Test 2: Check frames");
     QWORD frame1 = page_get_physical_frame(&gPageAllocator, page1);
-    if (frame1 == (QWORD)-1)
+    QWORD frame2 = page_get_physical_frame(&gPageAllocator, page2);
+    
+    if (frame1 == (QWORD)-1 || frame2 == (QWORD)-1)
     {
-        PrintToScreen("ERROR: Failed to get frame");
+        PrintToScreen("ERROR: no physical frame");
         return FALSE;
     }
-    PrintToScreen("Frame retrieved");
+    
+    if (frame1 == frame2)
+    {
+        PrintToScreen("ERROR: same phys frame");
+        return FALSE;
+    }
+    PrintToScreen("OK: Different phys frames");
 
-    PrintToScreen("Freeing page...");
-    if (!page_free(&gPageAllocator, page1, TRUE))
-    {
-        PrintToScreen("ERROR: Failed to free page");
-        return FALSE;
-    }
+    PrintToScreen("Test 3: Free pages");
+    page_free(&gPageAllocator, page1, TRUE);
+    page_free(&gPageAllocator, page2, TRUE);
 
     PrintToScreen("Page test PASSED");
     return TRUE;
@@ -62,43 +75,89 @@ BOOLEAN test_page_allocator(void)
 
 BOOLEAN test_heap_allocator(void)
 {
-    PrintToScreen("Allocating frame...");
+    PrintToScreen("Test 1: Create heap");
     QWORD heap_frame = frame_alloc(&gFrameAllocator);
     if (heap_frame == (QWORD)-1)
     {
-        PrintToScreen("ERROR: alloc failed");
+        PrintToScreen("ERROR: no frame for heap");
         return FALSE;
     }
-    PrintToScreen("Frame allocated OK");
     
-    PrintToScreen("Freeing frame...");
-    if (!frame_free(&gFrameAllocator, heap_frame))
+    PVOID heap_base = frame_to_address(&gFrameAllocator, heap_frame);
+    PHEAP heap = heap_create(heap_base, FRAME_SIZE);
+    if (!heap)
     {
-        PrintToScreen("ERROR: free failed");
+        PrintToScreen("ERROR: heap_create failed");
+        return FALSE;
+    }
+    PrintToScreen("OK: Heap created");
+    
+    PrintToScreen("Test 2: Alloc & write data");
+    DWORD* ptr1 = (DWORD*)heap_alloc(heap, sizeof(DWORD) * 4);
+    DWORD* ptr2 = (DWORD*)heap_alloc(heap, sizeof(DWORD) * 4);
+    
+    if (!ptr1 || !ptr2)
+    {
+        PrintToScreen("ERROR: heap_alloc failed");
         return FALSE;
     }
     
+    ptr1[0] = 0xDEADBEEF;
+    ptr2[0] = 0xCAFEBABE;
+    
+    if (ptr1[0] != 0xDEADBEEF || ptr2[0] != 0xCAFEBABE)
+    {
+        PrintToScreen("ERROR: data corrupted");
+        return FALSE;
+    }
+    PrintToScreen("OK: Data integrity");
+    
+    PrintToScreen("Test 3: Free & cleanup");
+    heap_free(heap, ptr1);
+    heap_free(heap, ptr2);
+    heap_destroy(heap);
+    frame_free(&gFrameAllocator, heap_frame);
+
     PrintToScreen("Heap test PASSED");
     return TRUE;
 }
 
 BOOLEAN test_frame_allocator(void)
 {
-    PrintToScreen("Allocating frame...");
+    PrintToScreen("Test 1: Alloc 2 frames");
     QWORD frame1 = frame_alloc(&gFrameAllocator);
-    if (frame1 == (QWORD)-1)
+    QWORD frame2 = frame_alloc(&gFrameAllocator);
+    
+    if (frame1 == (QWORD)-1 || frame2 == (QWORD)-1)
     {
         PrintToScreen("ERROR: alloc failed");
         return FALSE;
     }
-    PrintToScreen("Frame allocated OK");
+    
+    if (frame1 == frame2)
+    {
+        PrintToScreen("ERROR: same frame twice");
+        return FALSE;
+    }
+    PrintToScreen("OK: Got different frames");
 
-    PrintToScreen("Freeing frame...");
+    PrintToScreen("Test 2: Free and realloc");
     if (!frame_free(&gFrameAllocator, frame1))
     {
         PrintToScreen("ERROR: free failed");
         return FALSE;
     }
+    
+    QWORD frame3 = frame_alloc(&gFrameAllocator);
+    if (frame3 != frame1)
+    {
+        PrintToScreen("ERROR: didn't reuse freed");
+        return FALSE;
+    }
+    PrintToScreen("OK: Reused freed frame");
+    
+    frame_free(&gFrameAllocator, frame2);
+    frame_free(&gFrameAllocator, frame3);
 
     PrintToScreen("Frame test PASSED");
     return TRUE;
@@ -106,11 +165,7 @@ BOOLEAN test_frame_allocator(void)
 
 void memory_tests_register(void)
 {
-    PrintToScreen("Registering frame test");
     test_framework_register("frame", test_frame_allocator);
-    Log("Registering heap test");
     test_framework_register("heap", test_heap_allocator);
-    Log("Registering page test");
     test_framework_register("page", test_page_allocator);
-    Log("All tests registered");
 }
