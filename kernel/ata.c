@@ -18,6 +18,11 @@ static inline WORD inw(WORD port)
     return __inword(port);
 }
 
+static inline void outw(WORD port, WORD value)
+{
+    __outword(port, value);
+}
+
 void ATA_Wait400NS(WORD ctrl_base)
 {
     for (int i = 0; i < 4; i++)
@@ -206,6 +211,75 @@ BOOLEAN ATA_ReadSectorsPIO(PATA_DEVICE device, DWORD lba, BYTE sector_count, PVO
         }
       
         ATA_Wait400NS(device->ctrl_base);
+    }
+    
+    return TRUE;
+}
+
+BOOLEAN ATA_WriteSectorsPIO(PATA_DEVICE device, DWORD lba, BYTE sector_count, PVOID buffer)
+{
+    WORD* word_buffer = (WORD*)buffer;
+    BYTE status;
+    
+    if (!device || !device->present || sector_count == 0)
+    {
+        return FALSE;
+    }
+    
+    if (lba >= 0x10000000)
+    {
+        return FALSE;
+    }
+
+    outb(device->ctrl_base + ATA_REG_CONTROL, 0x02);
+
+    BYTE device_select = 0xE0 | ((device->device_number & 1) << 4) | ((lba >> 24) & 0x0F);
+    outb(device->io_base + ATA_REG_DEVICE, device_select);
+    ATA_Wait400NS(device->ctrl_base);
+  
+    outb(device->io_base + ATA_REG_SECTOR_COUNT, sector_count);
+    outb(device->io_base + ATA_REG_LBA_LOW, (BYTE)(lba & 0xFF));
+    outb(device->io_base + ATA_REG_LBA_MID, (BYTE)((lba >> 8) & 0xFF));
+    outb(device->io_base + ATA_REG_LBA_HIGH, (BYTE)((lba >> 16) & 0xFF));
+
+    outb(device->io_base + ATA_REG_COMMAND, ATA_CMD_WRITE_SECTORS);
+  
+    for (BYTE sector = 0; sector < sector_count; sector++)
+    {
+        status = ATA_WaitStatus(device->io_base, ATA_SR_BSY, 0, 5000);
+        if (status == 0xFF)
+        {
+            return FALSE;
+        }
+  
+        if (status & (ATA_SR_ERR | ATA_SR_DF))
+        {
+            return FALSE;
+        }
+        
+        status = ATA_WaitStatus(device->io_base, ATA_SR_DRQ, ATA_SR_DRQ, 5000);
+        if (status == 0xFF || !(status & ATA_SR_DRQ))
+        {
+            return FALSE;
+        }
+        
+        for (int i = 0; i < 256; i++)
+        {
+            outw(device->io_base + ATA_REG_DATA, word_buffer[sector * 256 + i]);
+        }
+      
+        ATA_Wait400NS(device->ctrl_base);
+    }
+    
+    status = ATA_WaitStatus(device->io_base, ATA_SR_BSY, 0, 5000);
+    if (status == 0xFF)
+    {
+        return FALSE;
+    }
+    
+    if (status & (ATA_SR_ERR | ATA_SR_DF))
+    {
+        return FALSE;
     }
     
     return TRUE;

@@ -61,6 +61,7 @@ void CLI_RefreshEditScreen(void);
 void CLI_Command_Clear(void);
 void CLI_Command_Time(void);
 void CLI_Command_PrintMBR(void);
+void CLI_Command_WriteMBR(const char* custom_text);
 
 // Exposed for keyboard handler
 extern CLI_STATE gCliState;

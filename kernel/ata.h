@@ -67,6 +67,7 @@ BOOLEAN ATA_IdentifyDevice(WORD io_base, WORD ctrl_base, BYTE device, PATA_IDENT
 void ATA_Wait400NS(WORD ctrl_base);
 BYTE ATA_WaitStatus(WORD io_base, BYTE mask, BYTE value, DWORD timeout);
 BOOLEAN ATA_ReadSectorsPIO(PATA_DEVICE device, DWORD lba, BYTE sector_count, PVOID buffer);
+BOOLEAN ATA_WriteSectorsPIO(PATA_DEVICE device, DWORD lba, BYTE sector_count, PVOID buffer);
 void ATA_PrintDeviceInfo(PATA_DEVICE device);
 PATA_DEVICE ATA_GetDevice(DWORD index);
 DWORD ATA_GetDeviceCount(void);

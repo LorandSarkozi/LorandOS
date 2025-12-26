@@ -48,6 +48,7 @@ void CLI_Init(void)
     Log("MiniOS CLI v1.0");
     Log("Type 'clear' to clear screen, 'time' for system time, 'edit' for editor");
     Log("Type 'printmbr' to display disk sector 0 in hex format");
+    Log("Type 'writembr' to write test data to disk sector 0");
     CLI_PrintPrompt();
 }
 
@@ -236,10 +237,16 @@ void CLI_ProcessCommand(void)
     {
         CLI_Command_PrintMBR();
     }
+    else if (strncmp_equal(gCliState.commandBuffer, "writembr", 8))
+    {
+        const char* args = gCliState.commandBuffer + 8;
+        while (*args == ' ') args++;
+        CLI_Command_WriteMBR(args);
+    }
     else
     {
         extern PSCREEN gVideo;
-        const char* msg = "Unknown command. Available: clear, cls, time, edit, printmbr";
+        const char* msg = "Unknown command. Available: clear, cls, time, edit, printmbr, writembr";
         DWORD pos = ((gCliState.cursorPosition / MAX_COLUMNS) + 1) * MAX_COLUMNS;
         
         while (*msg && pos < MAX_OFFSET)
@@ -699,4 +706,102 @@ void CLI_Command_PrintMBR(void)
     
     gCliState.cursorPosition = pos;
     CursorPosition(pos);
+}
+
+void CLI_Command_WriteMBR(const char* custom_text)
+{
+    extern PSCREEN gVideo;
+    BYTE sector_buffer[512];
+    DWORD pos = ((gCliState.cursorPosition / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    
+    DWORD device_count = ATA_GetDeviceCount();
+    if (device_count == 0)
+    {
+        const char* error_msg = "No ATA devices found!";
+        while (*error_msg && pos < MAX_OFFSET)
+        {
+            gVideo[pos].c = *error_msg;
+            gVideo[pos].color = 0x0C;
+            error_msg++;
+            pos++;
+        }
+        gCliState.cursorPosition = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+        CursorPosition(gCliState.cursorPosition);
+        return;
+    }
+    
+    PATA_DEVICE device = ATA_GetDevice(0);
+    
+    if (!device)
+    {
+        const char* error_msg = "Failed to get ATA device!";
+        while (*error_msg && pos < MAX_OFFSET)
+        {
+            gVideo[pos].c = *error_msg;
+            gVideo[pos].color = 0x0C;
+            error_msg++;
+            pos++;
+        }
+        gCliState.cursorPosition = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+        CursorPosition(gCliState.cursorPosition);
+        return;
+    }
+    
+    memset(sector_buffer, 0, 512);
+    
+    const char* text_to_write = (custom_text && *custom_text) ? custom_text : "MiniOS Test MBR - Default text";
+    for (int i = 0; text_to_write[i] && i < 500; i++)
+    {
+        sector_buffer[i] = (BYTE)text_to_write[i];
+    }
+    
+    sector_buffer[510] = 0x55;
+    sector_buffer[511] = 0xAA;
+    
+    const char* writing_msg = "Writing test MBR to sector 0...";
+    while (*writing_msg && pos < MAX_OFFSET)
+    {
+        gVideo[pos].c = *writing_msg;
+        gVideo[pos].color = 0x0E;
+        writing_msg++;
+        pos++;
+    }
+    pos = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    
+    if (!ATA_WriteSectorsPIO(device, 0, 1, sector_buffer))
+    {
+        const char* error_msg = "Failed to write sector 0!";
+        while (*error_msg && pos < MAX_OFFSET)
+        {
+            gVideo[pos].c = *error_msg;
+            gVideo[pos].color = 0x0C;
+            error_msg++;
+            pos++;
+        }
+        gCliState.cursorPosition = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+        CursorPosition(gCliState.cursorPosition);
+        return;
+    }
+    
+    const char* success_msg = "Write successful! Boot signature (0x55AA) written.";
+    while (*success_msg && pos < MAX_OFFSET)
+    {
+        gVideo[pos].c = *success_msg;
+        gVideo[pos].color = 0x0A;
+        success_msg++;
+        pos++;
+    }
+    pos = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    
+    const char* verify_msg = "Use 'printmbr' to verify the write.";
+    while (*verify_msg && pos < MAX_OFFSET)
+    {
+        gVideo[pos].c = *verify_msg;
+        gVideo[pos].color = 0x0B;
+        verify_msg++;
+        pos++;
+    }
+    
+    gCliState.cursorPosition = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    CursorPosition(gCliState.cursorPosition);
 }

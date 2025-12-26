@@ -785,7 +785,7 @@
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
-Build started 07/12/2025 19:32:29.
+Build started 26/12/2025 13:22:49.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" on node 2 (Rebuild target(s)).
      1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
@@ -810,10 +810,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
      1>Target "SetTelemetryEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
        Using "SetEnv" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={44C04B23-A003-4858-8B52-075710CAEA8C}
+         VSTEL_SolutionSessionID={F57F5005-9C33-447E-B522-0F2468EFC436}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=359674683
+         VSTEL_CurrentSolutionBuildID=1483808796
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={d7ab6db1-8bb8-4481-8947-49a5c1a1defb}
@@ -1441,7 +1441,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          00000000000i[      ]   SB16 support: yes
          00000000000i[      ]   USB support: yes
          00000000000i[      ]   VGA extension support: vbe cirrus voodoo
-         00000000000i[MEM0  ] allocated memory at 04AA8020. after alignment, vector=04AA9000
+         00000000000i[MEM0  ] allocated memory at 040A7020. after alignment, vector=040A8000
          00000000000i[MEM0  ] 512.00MB
          00000000000i[MEM0  ] mem block size = 0x00100000, blocks=512
          00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('.\utils\Bochs-2.6.8\BIOS-bochs-latest')
@@ -1453,7 +1453,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
          00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
          00000000000i[CMOS  ] Using local time for initial clock
-         00000000000i[CMOS  ] Setting initial clock to: Sun Dec 07 19:32:30 2025 (time0=1765128750)
+         00000000000i[CMOS  ] Setting initial clock to: Fri Dec 26 13:22:49 2025 (time0=1766748169)
          00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
          00000000000i[DMA   ] channel 4 used by cascade
          00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -1466,7 +1466,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          00000000000i[BXVGA ] VBE Bochs Display Extension Enabled
          00000000000i[WINGUI] Desktop Window dimensions: 1536 x 864
          00000000000i[WINGUI] option 1: gui_debug
-         00000000000i[WINGUI] Number of Mouse Buttons = 2
+         00000000000i[WINGUI] Number of Mouse Buttons = 5
          00000000000i[WINGUI] IME disabled
          00000000000i[MEM0  ] rom at 0xc0000/41472 ('.\utils\Bochs-2.6.8\VGABIOS-lgpl-latest')
          00000000000i[PLUGIN] init_dev of 'floppy' plugin device by virtual method
@@ -1608,10 +1608,102 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          00001503800i[BXVGA ] VBE known Display Interface b0c5
          00001506725i[VBIOS ] VBE Bios $Id: vbe.c,v 1.65 2014/07/08 18:02:25 vruppert Exp $
          00001851051i[BIOS  ] ata0-0: PCHS=10/16/63 translation=none LCHS=10/16/63
-         00005727949i[BIOS  ] IDE time out
-         01746109921i[BIOS  ] Booting from 0000:7c00
-         01756234065i[CPU0  ] [1756234065] Stopped on MAGIC BREAKPOINT
-         01756241874i[CPU0  ] [1756241874] Stopped on MAGIC BREAKPOINT
-         01756255904i[SER   ] com1: FIFO enabled
-         03084535920i[WINGUI] &&&missing mouse state change
-         52350112000i[WINGUI] &&&missing mouse state change
+         00005727880i[BIOS  ] IDE time out
+         04003571782i[BIOS  ] Booting from 0000:7c00
+         04013695922i[CPU0  ] [4013695922] Stopped on MAGIC BREAKPOINT
+         04013703731i[CPU0  ] [4013703731] Stopped on MAGIC BREAKPOINT
+         04013717761i[SER   ] com1: FIFO enabled
+         236556732794i[CPU0  ] CPU is in long mode (halted)
+         236556732794i[CPU0  ] CS.mode = 64 bit
+         236556732794i[CPU0  ] SS.mode = 64 bit
+         236556732794i[CPU0  ] EFER   = 0x00000500
+         236556732794i[CPU0  ] | RAX=0000000000000020  RBX=0000000000400000
+         236556732794i[CPU0  ] | RCX=0000000000000000  RDX=0000000000000020
+         236556732794i[CPU0  ] | RSP=00000000001fffd0  RBP=0000000000000000
+         236556732794i[CPU0  ] | RSI=0000000000020000  RDI=000000000020e000
+         236556732794i[CPU0  ] |  R8=00000000001fff28   R9=00000000002071d4
+         236556732794i[CPU0  ] | R10=0000000000200000  R11=00000000000000d2
+         236556732794i[CPU0  ] | R12=0000000000000000  R13=0000000000000000
+         236556732794i[CPU0  ] | R14=0000000000000000  R15=0000000000000000
+         236556732794i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf ZF af PF cf
+         236556732794i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
+         236556732794i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 0
+         236556732794i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         236556732794i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         236556732794i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         236556732794i[CPU0  ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         236556732794i[CPU0  ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 0
+         236556732794i[CPU0  ] |  MSR_FS_BASE:0000000000000000
+         236556732794i[CPU0  ] |  MSR_GS_BASE:0000000000000000
+         236556732794i[CPU0  ] | RIP=0000000000205511 (0000000000205511)
+         236556732794i[CPU0  ] | CR0=0xe0000011 CR2=0x0000000000000000
+         236556732794i[CPU0  ] | CR3=0x00209000 CR4=0x00000620
+         236556732794i[CMOS  ] Last time is 1766807308 (Sat Dec 27 05:48:28 2025)
+         236556732794i[SIM   ] quit_sim called with exit code 0
+       Done executing task "Exec".
+     1>Done building target "PostBuildEvent" in project "RunBochs.vcxproj".
+     1>Target "_BuildLinkAction" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "BuildLink" depends on it):
+     1>Done building target "_BuildLinkAction" in project "RunBochs.vcxproj".
+     1>Target "BuildLink" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildLink" in project "RunBochs.vcxproj".
+     1>Target "AfterBuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+     1>Done building target "AfterBuild" in project "RunBochs.vcxproj".
+       Target "_CheckForCompileOutputs" skipped. Previously built successfully.
+       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
+     1>Target "_CleanGetCurrentAndPriorFileWrites" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "IncrementalClean" depends on it):
+       Task "ReadLinesFromFile"
+       Done executing task "ReadLinesFromFile".
+       Task "ConvertToAbsolutePath"
+       Done executing task "ConvertToAbsolutePath".
+       Task "FindUnderPath"
+         Comparison path is "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Comparison path is "C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Comparison path is "x64\Release\".
+       Done executing task "FindUnderPath".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+     1>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "RunBochs.vcxproj".
+     1>Target "IncrementalClean" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+       Task "FindUnderPath"
+         Comparison path is "C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Comparison path is "x64\Release\".
+       Done executing task "FindUnderPath".
+       Task "Delete"
+       Done executing task "Delete".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as (''!='').
+     1>Done building target "IncrementalClean" in project "RunBochs.vcxproj".
+     1>Target "TlogCleanup" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+       Using "CleanupStaleTlogItems" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
+       Task "CleanupStaleTlogItems"
+       Done executing task "CleanupStaleTlogItems".
+     1>Done building target "TlogCleanup" in project "RunBochs.vcxproj".
+     1>Target "FinalizeBuildStatus" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Build" depends on it):
+       Task "Delete"
+         Deleting file "x64\Release\RunBochs.tlog\unsuccessfulbuild".
+       Done executing task "Delete".
+       Task "Touch"
+         Touching "x64\Release\RunBochs.tlog\RunBochs.lastbuildstate".
+       Done executing task "Touch".
+     1>Done building target "FinalizeBuildStatus" in project "RunBochs.vcxproj".
+     1>Target "Build" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
+     1>Done building target "Build" in project "RunBochs.vcxproj".
+     1>Target "AfterRebuild" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (target "Rebuild" depends on it):
+     1>Done building target "AfterRebuild" in project "RunBochs.vcxproj".
+       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+     1>Target "Rebuild" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.BuildSteps.Targets" from project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (entry point):
+     1>Done building target "Rebuild" in project "RunBochs.vcxproj".
+     1>Done Building Project "C:\Users\Lori\Desktop\MiniOS\utils\VS\RunBochs\RunBochs.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:01:23.18
