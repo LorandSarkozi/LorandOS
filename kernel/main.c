@@ -6,13 +6,14 @@
 #include "keyboard.h"
 #include "cli.h"
 #include "ata.h"
+#include "memory_manager.h"
 
 extern void TriggerPF(void);
 extern void TriggerUD2(void);
 
 void KernelMain()
 {
-    __magic();    // break into BOCHS
+    //__magic();    // break into BOCHS
     
     //__enableSSE();  // only for demo; in the future will be called from __init.asm
 
@@ -38,6 +39,9 @@ void KernelMain()
     
     Log("Enabling interrupts");
     __sti();
+    
+    //Log("Initializing Memory Management");
+    //Memory_Init();
     
     Log("Initializing ATA subsystem");
     ATA_Init();

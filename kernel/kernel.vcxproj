@@ -133,24 +133,35 @@
   <ItemGroup>
     <ClCompile Include="ata.c" />
     <ClCompile Include="cli.c" />
+    <ClCompile Include="frame_allocator.c" />
+    <ClCompile Include="heap_allocator.c" />
     <ClCompile Include="irq_dispatch.c" />
     <ClCompile Include="isr_dispatch.cpp" />
     <ClCompile Include="keyboard.c" />
     <ClCompile Include="logging.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="memory_manager.c" />
+    <ClCompile Include="memory_tests.c" />
+    <ClCompile Include="page_allocator.c" />
     <ClCompile Include="pic.c" />
     <ClCompile Include="pit.c" />
     <ClCompile Include="rtc.c" />
     <ClCompile Include="screen.c" />
     <ClCompile Include="string.c" />
+    <ClCompile Include="test_framework.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ata.h" />
     <ClInclude Include="ata_commands.h" />
     <ClInclude Include="bochs_map.h" />
     <ClInclude Include="cli.h" />
+    <ClInclude Include="frame_allocator.h" />
+    <ClInclude Include="heap_allocator.h" />
     <ClInclude Include="logging.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="memory_manager.h" />
+    <ClInclude Include="memory_tests.h" />
+    <ClInclude Include="page_allocator.h" />
     <ClInclude Include="pic.h" />
     <ClInclude Include="pit.h" />
     <ClInclude Include="keyboard.h" />
@@ -158,6 +169,7 @@
     <ClInclude Include="scancode.h" />
     <ClInclude Include="screen.h" />
     <ClInclude Include="string.h" />
+    <ClInclude Include="test_framework.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="__init.asm">

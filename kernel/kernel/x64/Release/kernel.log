@@ -791,7 +791,7 @@
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (44,11)" does not exist in the project, and will be ignored.
        The target "CompileDesignTime" listed in a BeforeTargets attribute at "D:\New folder\MSBuild\Microsoft\VisualStudio\WebTools.Aspire\Microsoft.WebTools.Aspire.targets (57,11)" does not exist in the project, and will be ignored.
-Build started 26/12/2025 13:22:45.
+Build started 26/12/2025 15:47:36.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" on node 2 (Rebuild target(s)).
      1>Project file contains ToolsVersion="14.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
@@ -818,10 +818,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
      1>Target "SetTelemetryEnvironmentVariables" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (target "Rebuild" depends on it):
        Using "SetEnv" task from assembly "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={F57F5005-9C33-447E-B522-0F2468EFC436}
+         VSTEL_SolutionSessionID={042DC9F7-158A-406D-BB6D-754B52BF07A8}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=1483808796
+         VSTEL_CurrentSolutionBuildID=2496713572
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={7703C7CC-77F7-4D03-9AD0-482B24B1CF0B}
@@ -947,7 +947,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
        Task "VCMessage" skipped, due to false condition; ('$(WarnAboutIndividualManagedFiles)' == 'true') was evaluated as ('' == 'true').
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "_PrepareForReferenceResolution" in project "kernel.vcxproj".
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('ata.c;cli.c;irq_dispatch.c;...'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('ata.c;cli.c;frame_allocator.c;...'!='' and 'false'=='true' and '' != 'false').
      1>Target "BeforeResolveReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "BeforeResolveReferences" in project "kernel.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
@@ -1051,7 +1051,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
        Done executing task "MakeDir".
      1>Done building target "PrepareForBuild" in project "kernel.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('ata.c;cli.c;irq_dispatch.c;...'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('ata.c;cli.c;frame_allocator.c;...'!='' and 'false'=='true' and '' != 'false').
        Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
      1>Target "ResolveSDKReferences" in file "D:\New folder\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
@@ -1298,16 +1298,22 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
      1>Target "WarnCompileDuplicatedFilename" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (target "_ClCompile" depends on it):
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'ata.c' != 'ata.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'cli.c' != 'cli.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'frame_allocator.c' != 'frame_allocator.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'heap_allocator.c' != 'heap_allocator.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'irq_dispatch.c' != 'irq_dispatch.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'isr_dispatch.cpp' != 'isr_dispatch.cpp' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'keyboard.c' != 'keyboard.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'logging.c' != 'logging.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'main.c' != 'main.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'memory_manager.c' != 'memory_manager.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'memory_tests.c' != 'memory_tests.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'page_allocator.c' != 'page_allocator.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pic.c' != 'pic.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pit.c' != 'pit.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'rtc.c' != 'rtc.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'screen.c' != 'screen.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'string.c' != 'string.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'test_framework.c' != 'test_framework.c' and 'kernel\x64\Release\' == 'kernel\x64\Release\').
      1>Done building target "WarnCompileDuplicatedFilename" in project "kernel.vcxproj".
      1>Target "ComputeStdModulesCompileInputs" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (target "_ClCompile" depends on it):
        Task "GetLibraryModuleSources" skipped, due to false condition; ('@(LibraryManifests)' != '') was evaluated as ('' != '').
@@ -1333,7 +1339,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
      1>Target "SelectClCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets" from project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (target "ClCompile" depends on it):
      1>Done building target "SelectClCompile" in project "kernel.vcxproj".
        Target "SelectAnalysisManifest" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
-       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('ata.c;cli.c;irq_dispatch.c;...' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('ata.c;cli.c;frame_allocator.c;...' != '' and 'false' == 'True').
      1>Target "ClCompile" in file "D:\New folder\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets" from project "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (target "_ClCompile" depends on it):
        Task "Delete"
        Done executing task "Delete".
@@ -1345,17 +1351,23 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
        Task "CL"
          Forcing recompile of all source files due to missing PDB "kernel\x64\Release\vc143.pdb".
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1336
-           SARIF_OUTPUT_PIPE=1632
-         D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TC /FC /errorReport:prompt /noover ata.c cli.c irq_dispatch.c keyboard.c logging.c main.c pic.c pit.c rtc.c screen.c string.c
+           VS_UNICODE_OUTPUT=2352
+           SARIF_OUTPUT_PIPE=1872
+         D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TC /FC /errorReport:prompt /noover ata.c cli.c frame_allocator.c heap_allocator.c irq_dispatch.c keyboard.c logging.c main.c memory_manager.c memory_tests.c page_allocator.c pic.c pit.c rtc.c screen.c string.c test_framework.c
          Tracking command:
-         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\ATA.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\CLI.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\IRQ_DISPATCH.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KEYBOARD.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\LOGGING.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MAIN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIT.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\RTC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\SCREEN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\STRING.C" /b MSBuildConsole_CancelEvent9c8a75618e564e448dbcec3217b2bd70  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TC /FC /errorReport:prompt /noover ata.c cli.c irq_dispatch.c keyboard.c logging.c main.c pic.c pit.c rtc.c screen.c string.c
+         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\ATA.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\CLI.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\FRAME_ALLOCATOR.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\HEAP_ALLOCATOR.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\IRQ_DISPATCH.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KEYBOARD.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\LOGGING.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MAIN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MEMORY_MANAGER.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\MEMORY_TESTS.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PAGE_ALLOCATOR.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\PIT.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\RTC.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\SCREEN.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\STRING.C|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\TEST_FRAMEWORK.C" /b MSBuildConsole_CancelEvent9690c211e00543a4bc7746179d9f6a8b  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TC /FC /errorReport:prompt /noover ata.c cli.c frame_allocator.c heap_allocator.c irq_dispatch.c keyboard.c logging.c main.c memory_manager.c memory_tests.c page_allocator.c pic.c pit.c rtc.c screen.c string.c test_framework.c
          ata.c
          cli.c
+     1>C:\Users\Lori\Desktop\MiniOS\kernel\cli.c(862,9): warning C4090: 'function': different 'const' qualifiers
+         frame_allocator.c
+         heap_allocator.c
          irq_dispatch.c
          keyboard.c
          logging.c
          main.c
+         memory_manager.c
+         memory_tests.c
+         page_allocator.c
          pic.c
          pit.c
          rtc.c
@@ -1363,6 +1375,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          screen.c
          string.c
      1>C:\Users\Lori\Desktop\MiniOS\kernel\string.c(805,33): warning C4090: 'function': different 'const' qualifiers
+         test_framework.c
          Generating Code...
        Done executing task "CL".
        Task "CL"
@@ -1376,16 +1389,16 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
          Write Tracking Logs:
          	kernel\x64\Release\kernel.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1692
-           SARIF_OUTPUT_PIPE=2780
+           VS_UNICODE_OUTPUT=2848
+           SARIF_OUTPUT_PIPE=2796
          D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt /noover isr_dispatch.cpp
          Tracking command:
-         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\ISR_DISPATCH.CPP /b MSBuildConsole_CancelEvent283a9668a132427c8fb09df7294f017c  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt /noover isr_dispatch.cpp
+         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\ISR_DISPATCH.CPP /b MSBuildConsole_CancelEvent0dac9668be0046b2bafd09582d3d3c3c  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe"  /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl- /O2 /Oi /Gm- /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"kernel\x64\Release\\" /Fd"kernel\x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt /noover isr_dispatch.cpp
          isr_dispatch.cpp
        Done executing task "CL".
      1>Done building target "ClCompile" in project "kernel.vcxproj".
        Target "RunSelectedFileNativeCodeAnalysis" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
-       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('ata.c;cli.c;irq_dispatch.c;...' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('ata.c;cli.c;frame_allocator.c;...' != '' and 'false' == 'True').
        Target "NoAnalysisToolEnabledWarning" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='false' AND '$(EnableClangTidyCodeAnalysis)'=='false') was evaluated as ('false'=='true' AND 'true'=='false' AND 'false'=='false').
        Target "RunSelectedFileClangTidy" skipped, due to false condition; ('$(RunClangCppAnalysis)'=='true' AND '$(SelectedFiles)'!='') was evaluated as ('false'=='true' AND ''!='').
        Target "MicrosoftAnalysisIncompatiableWithClangCl" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' AND '$(EnableMicrosoftCodeAnalysis)'=='true' AND '$(UseClangCl)'=='true') was evaluated as ('false'=='true' AND 'true'=='true' AND ''=='true').
@@ -1499,34 +1512,46 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\Lori\Desktop\Mini
        Task "Link"
          All source files are not up-to-date: missing command TLog "C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog\link.command.1.tlog".
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2624
+           VS_UNICODE_OUTPUT=2584
          D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.exe" /NOLOGO /MANIFEST:NO /PDB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.pdb" /SUBSYSTEM:NATIVE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCGOUT:"kernel\x64\Release\kernel.iobj" /TLBID:1 /ENTRY:"ASMEntryPoint" /BASE:"0x200000" /DYNAMICBASE:NO /FIXED /NXCOMPAT:NO /IMPLIB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.lib" /MACHINE:X64 /SAFESEH:NO /FILEALIGN:0x1000 /ALIGN:0x1000 /ignore:4108 kernel\x64\Release\__init.obj
          kernel\x64\Release\ata.obj
          kernel\x64\Release\cli.obj
+         kernel\x64\Release\frame_allocator.obj
+         kernel\x64\Release\heap_allocator.obj
          kernel\x64\Release\irq_dispatch.obj
          kernel\x64\Release\isr_dispatch.obj
          kernel\x64\Release\keyboard.obj
          kernel\x64\Release\logging.obj
          kernel\x64\Release\main.obj
+         kernel\x64\Release\memory_manager.obj
+         kernel\x64\Release\memory_tests.obj
+         kernel\x64\Release\page_allocator.obj
          kernel\x64\Release\pic.obj
          kernel\x64\Release\pit.obj
          kernel\x64\Release\rtc.obj
          kernel\x64\Release\screen.obj
          kernel\x64\Release\string.obj
+         kernel\x64\Release\test_framework.obj
          Tracking command:
-         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\ATA.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\CLI.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\IRQ_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\ISR_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\KEYBOARD.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\LOGGING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MAIN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIT.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\RTC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\SCREEN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\STRING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\__INIT.OBJ" /b MSBuildConsole_CancelEvent169bea907d1443d9bb2faeac8dfa183f  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.exe" /NOLOGO /MANIFEST:NO /PDB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.pdb" /SUBSYSTEM:NATIVE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCGOUT:"kernel\x64\Release\kernel.iobj" /TLBID:1 /ENTRY:"ASMEntryPoint" /BASE:"0x200000" /DYNAMICBASE:NO /FIXED /NXCOMPAT:NO /IMPLIB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.lib" /MACHINE:X64 /SAFESEH:NO /FILEALIGN:0x1000 /ALIGN:0x1000 /ignore:4108 kernel\x64\Release\__init.obj
+         D:\New folder\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\Lori\Desktop\MiniOS\kernel\kernel\x64\Release\kernel.tlog /r "C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\ATA.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\CLI.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\FRAME_ALLOCATOR.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\HEAP_ALLOCATOR.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\IRQ_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\ISR_DISPATCH.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\KEYBOARD.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\LOGGING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MAIN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MEMORY_MANAGER.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\MEMORY_TESTS.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PAGE_ALLOCATOR.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\PIT.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\RTC.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\SCREEN.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\STRING.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\TEST_FRAMEWORK.OBJ|C:\USERS\LORI\DESKTOP\MINIOS\KERNEL\KERNEL\X64\RELEASE\__INIT.OBJ" /b MSBuildConsole_CancelEvent443606e124b34476ab963e36e71e7ef8  /c "D:\New folder\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.exe" /NOLOGO /MANIFEST:NO /PDB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.pdb" /SUBSYSTEM:NATIVE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCGOUT:"kernel\x64\Release\kernel.iobj" /TLBID:1 /ENTRY:"ASMEntryPoint" /BASE:"0x200000" /DYNAMICBASE:NO /FIXED /NXCOMPAT:NO /IMPLIB:"C:\Users\Lori\Desktop\MiniOS\kernel\x64\Release\kernel.lib" /MACHINE:X64 /SAFESEH:NO /FILEALIGN:0x1000 /ALIGN:0x1000 /ignore:4108 kernel\x64\Release\__init.obj
          kernel\x64\Release\ata.obj
          kernel\x64\Release\cli.obj
+         kernel\x64\Release\frame_allocator.obj
+         kernel\x64\Release\heap_allocator.obj
          kernel\x64\Release\irq_dispatch.obj
          kernel\x64\Release\isr_dispatch.obj
          kernel\x64\Release\keyboard.obj
          kernel\x64\Release\logging.obj
          kernel\x64\Release\main.obj
+         kernel\x64\Release\memory_manager.obj
+         kernel\x64\Release\memory_tests.obj
+         kernel\x64\Release\page_allocator.obj
          kernel\x64\Release\pic.obj
          kernel\x64\Release\pit.obj
          kernel\x64\Release\rtc.obj
          kernel\x64\Release\screen.obj
          kernel\x64\Release\string.obj
+         kernel\x64\Release\test_framework.obj
      1>LINK : warning LNK4281: undesirable base address 0x200000 for x64 image; set base address above 4GB for best ASLR optimization
        Done executing task "Link".
        Task "Message"
@@ -1754,6 +1779,7 @@ Build succeeded.
 
        "C:\Users\Lori\Desktop\MiniOS\kernel\kernel.vcxproj" (Rebuild target) (1) ->
        (ClCompile target) -> 
+         C:\Users\Lori\Desktop\MiniOS\kernel\cli.c(862,9): warning C4090: 'function': different 'const' qualifiers
          C:\Users\Lori\Desktop\MiniOS\kernel\rtc.c(51,42): warning C4244: 'function': conversion from 'WORD' to 'BYTE', possible loss of data
          C:\Users\Lori\Desktop\MiniOS\kernel\string.c(805,33): warning C4090: 'function': different 'const' qualifiers
 
@@ -1762,7 +1788,7 @@ Build succeeded.
        (Link target) -> 
          LINK : warning LNK4281: undesirable base address 0x200000 for x64 image; set base address above 4GB for best ASLR optimization
 
-    3 Warning(s)
+    4 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:02.15
+Time Elapsed 00:00:01.92

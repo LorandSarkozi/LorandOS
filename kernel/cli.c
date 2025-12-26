@@ -1,10 +1,12 @@
 #include "cli.h"
+#include "keyboard.h"
 #include "screen.h"
 #include "string.h"
 #include "pit.h"
 #include "rtc.h"
 #include "logging.h"
 #include "ata.h"
+#include "test_framework.h"
 
 CLI_STATE gCliState;
 
@@ -49,6 +51,20 @@ void CLI_Init(void)
     Log("Type 'clear' to clear screen, 'time' for system time, 'edit' for editor");
     Log("Type 'printmbr' to display disk sector 0 in hex format");
     Log("Type 'writembr' to write test data to disk sector 0");
+    Log("Type 'test_list' to list tests, 'test_run <name>' to run a test, 'test_run_all' to run all tests");
+    
+    Log("Init test framework...");
+    test_framework_init();
+    Log("Test framework ready");
+    
+    Log("Init frame allocator...");
+    Memory_Init();
+    Log("Frame allocator ready");
+    
+    Log("Register tests...");
+    memory_tests_register();
+    Log("Tests registered");
+    
     CLI_PrintPrompt();
 }
 
@@ -243,10 +259,23 @@ void CLI_ProcessCommand(void)
         while (*args == ' ') args++;
         CLI_Command_WriteMBR(args);
     }
+    else if (strncmp_equal(gCliState.commandBuffer, "test_run ", 9))
+    {
+        const char* test_name = gCliState.commandBuffer + 9;
+        CLI_Command_TestRun(test_name);
+    }
+    else if (strncmp_equal(gCliState.commandBuffer, "test_list", 9))
+    {
+        CLI_Command_TestList();
+    }
+    else if (strncmp_equal(gCliState.commandBuffer, "test_run_all", 12))
+    {
+        CLI_Command_TestRunAll();
+    }
     else
     {
         extern PSCREEN gVideo;
-        const char* msg = "Unknown command. Available: clear, cls, time, edit, printmbr, writembr";
+        const char* msg = "Unknown command. Available: clear, cls, time, edit, printmbr, writembr, test_run, test_list, test_run_all";
         DWORD pos = ((gCliState.cursorPosition / MAX_COLUMNS) + 1) * MAX_COLUMNS;
         
         while (*msg && pos < MAX_OFFSET)
@@ -803,5 +832,53 @@ void CLI_Command_WriteMBR(const char* custom_text)
     }
     
     gCliState.cursorPosition = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    CursorPosition(gCliState.cursorPosition);
+}
+
+void CLI_Command_TestRun(const char* test_name)
+{
+    extern PSCREEN gVideo;
+    DWORD pos = ((gCliState.cursorPosition / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+    
+    Log("CLI_Command_TestRun called");
+    
+    if (!test_name || *test_name == '\0')
+    {
+        Log("No test name provided");
+        const char* error_msg = "Usage: test_run <test_name>";
+        while (*error_msg && pos < MAX_OFFSET)
+        {
+            gVideo[pos].c = *error_msg;
+            gVideo[pos].color = 0x0C;
+            error_msg++;
+            pos++;
+        }
+        gCliState.cursorPosition = ((pos / MAX_COLUMNS) + 1) * MAX_COLUMNS;
+        CursorPosition(gCliState.cursorPosition);
+        return;
+    }
+    
+    Log("Calling test_framework_run with:");
+    Log(test_name);
+    test_framework_run(test_name);
+    Log("test_framework_run returned");
+    
+    gCliState.cursorPosition = ((gCliState.cursorPosition / MAX_COLUMNS) + 2) * MAX_COLUMNS;
+    CursorPosition(gCliState.cursorPosition);
+}
+
+void CLI_Command_TestList(void)
+{
+    test_framework_list();
+    
+    gCliState.cursorPosition = ((gCliState.cursorPosition / MAX_COLUMNS) + 2) * MAX_COLUMNS;
+    CursorPosition(gCliState.cursorPosition);
+}
+
+void CLI_Command_TestRunAll(void)
+{
+    test_framework_run_all();
+    
+    gCliState.cursorPosition = ((gCliState.cursorPosition / MAX_COLUMNS) + 2) * MAX_COLUMNS;
     CursorPosition(gCliState.cursorPosition);
 }

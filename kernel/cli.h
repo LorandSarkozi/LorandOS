@@ -2,6 +2,10 @@
 #define _CLI_H_
 
 #include "main.h"
+
+void memory_tests_register(void);
+void test_framework_init(void);
+void Memory_Init(void);
 #include "screen.h"
 #include "scancode.h"
 
@@ -62,6 +66,9 @@ void CLI_Command_Clear(void);
 void CLI_Command_Time(void);
 void CLI_Command_PrintMBR(void);
 void CLI_Command_WriteMBR(const char* custom_text);
+void CLI_Command_TestRun(const char* test_name);
+void CLI_Command_TestList(void);
+void CLI_Command_TestRunAll(void);
 
 // Exposed for keyboard handler
 extern CLI_STATE gCliState;
