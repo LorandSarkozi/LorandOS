@@ -120,7 +120,7 @@ void test_framework_run_all(void)
 {
     char buffer[128];
     cl_snprintf(buffer, sizeof(buffer), "Running %d tests", gTestFramework.test_count);
-    Log(buffer);
+    PrintToScreen(buffer);
 
     DWORD passed = 0;
     DWORD failed = 0;
@@ -129,19 +129,19 @@ void test_framework_run_all(void)
     {
         if (gTestFramework.tests[i].is_registered)
         {
-            Log("Running:");
-            Log(gTestFramework.tests[i].name);
+            PrintToScreen("Running: ");
+            PrintToScreen(gTestFramework.tests[i].name);
             
             BOOLEAN result = gTestFramework.tests[i].test_func();
             
             if (result)
             {
-                Log("[PASS]");
+                PrintToScreen("[PASS]");
                 passed++;
             }
             else
             {
-                Log("[FAIL]");
+                PrintToScreen("[FAIL]");
                 failed++;
             }
         }
@@ -149,21 +149,20 @@ void test_framework_run_all(void)
 
     memset(buffer, 0, sizeof(buffer));
     cl_snprintf(buffer, sizeof(buffer), "Tests: %d passed, %d failed", passed, failed);
-    Log(buffer);
+    PrintToScreen(buffer);
 }
 
 void test_framework_list(void)
 {
     char buffer[128];
     cl_snprintf(buffer, sizeof(buffer), "Available tests (%d):", gTestFramework.test_count);
-    Log(buffer);
+    PrintToScreen(buffer);
 
     for (DWORD i = 0; i < gTestFramework.test_count; i++)
     {
         if (gTestFramework.tests[i].is_registered)
         {
-            Log("  - ");
-            Log(gTestFramework.tests[i].name);
+            PrintToScreen(gTestFramework.tests[i].name);
         }
     }
 }
